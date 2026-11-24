@@ -1,0 +1,41 @@
+Incident,Year,Likely relevance,Likely trust boundary,Status
+Kaseya VSA REvil attack,2021,MSP-specific,RMM or management platform,Pilot-coded (P01)
+SimpleHelp exploited by DragonForce via an MSP,2025,MSP-specific,Remote-access tool,Pilot-coded (P02)
+SCKit rogue ScreenConnect clients via RMM+ extension,2026,MSP-specific,"Plugin, extension or package",Pilot-coded (P03)
+Rogue modified ScreenConnect clients spreading VBScript (September wave),2026,MSP-specific,Remote-access tool,To verify; may merge with P03
+BeyondTrust Remote Support API key compromise (US Treasury),2024,MSP-relevant,API credential or token,To verify
+ConnectWise environment breach by suspected nation-state,2025,MSP-relevant,Vendor or developer account,To verify
+Rackspace hosted Exchange ransomware,2022,MSP-specific,Cloud integration,To verify
+CloudNordic / AzeroCloud hosting ransomware,2023,MSP-specific,Backup or security-management platform,To verify
+Tietoevry data centre ransomware,2024,MSP-specific,Cloud integration,To verify
+Retailers breached via IT service provider help desk (social engineering),2025,MSP-specific,Identity provider,To verify
+Okta breach via support contractor (Lapsus$),2022,MSP-specific,Identity provider,To verify
+Help-desk refund scams using legitimate RMM tools (CISA AA23-025A),2023,MSP-relevant,Remote-access tool,To verify; misuse of legitimate functionality
+Ingram Micro ransomware,2025,MSP-relevant,Cloud integration,To verify
+Okta customer support system breach,2023,MSP-relevant,Identity provider,Pilot-coded (P08)
+JumpCloud commands framework abused,2023,MSP-relevant,Identity provider,Pilot-coded (P13)
+3CX DesktopApp trojanized build,2023,General supply-chain,Build or release pipeline,Pilot-coded (P05)
+Codecov Bash Uploader,2021,General supply-chain,Build or release pipeline,Pilot-coded (P06)
+CircleCI secrets exposure,2023,General supply-chain,Build or release pipeline,To verify
+tj-actions / reviewdog GitHub Actions,2025,General supply-chain,Build or release pipeline,Pilot-coded (P07)
+Salesloft Drift OAuth tokens,2025,General supply-chain,API credential or token,Pilot-coded (P09)
+Gainsight connected-app tokens (Salesforce),2025,General supply-chain,API credential or token,To verify
+Snowflake customer instances (UNC5537),2024,General supply-chain,Cloud integration,Pilot-coded (P10); probably exclude
+MOVEit Transfer mass exploitation,2023,General supply-chain,Cloud integration,To verify; file transfer has no category yet
+Cleo file transfer exploitation,2024,General supply-chain,Cloud integration,To verify
+XZ Utils backdoor,2024,General supply-chain,"Plugin, extension or package",To verify; caught before wide use
+Polyfill.io CDN takeover,2024,General supply-chain,"Plugin, extension or package",Pilot-coded (P15)
+Nx 's1ngularity' npm compromise,2025,General supply-chain,"Plugin, extension or package",To verify
+Shai-Hulud npm worm,2025,General supply-chain,"Plugin, extension or package",Pilot-coded (P11)
+Shai-Hulud 2.0,2025,General supply-chain,"Plugin, extension or package",To verify; may merge with P11
+GlassWorm OpenVSX extensions,2025,General supply-chain,"Plugin, extension or package",To verify
+Axios npm maintainer account hijack,2026,General supply-chain,"Plugin, extension or package",To verify
+Bitwarden CLI npm release,2026,General supply-chain,"Plugin, extension or package",To verify
+SAP npm packages (TeamPCP),2026,General supply-chain,"Plugin, extension or package",To verify
+Notepad++ update mechanism hijack,2025,General supply-chain,Software update mechanism,Pilot-coded (P14)
+Daemon Tools Lite trojanized installer,2026,General supply-chain,Software update mechanism,To verify (KEV)
+Trivy compromise,2026,General supply-chain,Build or release pipeline,To verify (KEV)
+Mimecast certificate compromise (M365 connections),2021,MSP-relevant,Backup or security-management platform,To verify (from Breaking Trust)
+ClickStudios Passwordstate update hijack,2021,MSP-relevant,Software update mechanism,To verify (from Breaking Trust)
+Heroku and Travis CI OAuth token theft,2022,General supply-chain,API credential or token,To verify (from Breaking Trust)
+Comm100 trojanized installer,2022,General supply-chain,Software update mechanism,To verify (from Breaking Trust)

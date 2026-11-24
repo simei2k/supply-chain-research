@@ -18,7 +18,8 @@ rules=[
  (r'trend micro \| (apex|officescan)|forticlient ems', 'Backup or security-management platform','Security management'),
  (r'active directory federation', 'Identity provider','Federation'),
  (r'tj-actions|reviewdog|trivy', 'Build or release pipeline','CI/CD component'),
- (r'asus \| live update|daemon \| daemon tools', 'Software update mechanism','Trojanized update or installer'),
+ (r'asus \| live update|daemon \| daemon tools|justice av solutions \| viewer', 'Software update mechanism','Trojanized update or installer'),
+ (r'n-able \| mailassure', 'Backup or security-management platform','Email security (MSP-hosted)'),
  (r'prettier|nx \| nx console|3cx', 'Plugin, extension or package','Package or extension'),
 ]
 import re
@@ -28,8 +29,18 @@ for i,r in df.iterrows():
     for p,tb,sub in rules:
         if re.search(p,s):
             out.append(dict(cveID=r.cveID,vendor=r.vendorProject,product=r['product'],dateAdded=r.dateAdded,ransomware=r.knownRansomwareCampaignUse,trust_boundary=tb,subtype=sub,name=r.vulnerabilityName,desc=r.shortDescription));break
-o=pd.DataFrame(out).sort_values('dateAdded')
+o=pd.DataFrame(out).sort_values(['dateAdded','cveID'],kind='stable')
 o=o[o.dateAdded>='2021-01-01']
+o['year']=o.dateAdded.str[:4]
+o['campaign_key']=o.vendor+' '+o['product']+' '+o.year
+o['pre2021_cve']=o.cveID.str.split('-').str[1].astype(int)<2021
+# keep hand-curated campaign keys from an existing output file
+import os
+outp=sys.argv[2] if len(sys.argv)>2 else 'kev_msp_clean.csv'
+if os.path.exists(outp):
+    prev=pd.read_csv(outp)
+    if 'campaign_key' in prev:
+        o['campaign_key']=o.cveID.map(dict(zip(prev.cveID,prev.campaign_key))).fillna(o.campaign_key)
 o.to_csv(sys.argv[2] if len(sys.argv)>2 else 'kev_msp_clean.csv',index=False)
 print(len(o)); print(o.trust_boundary.value_counts()); print(o.groupby('trust_boundary').ransomware.apply(lambda s:(s=='Known').sum()))
 pd.set_option('display.width',250);pd.set_option('display.max_rows',300)

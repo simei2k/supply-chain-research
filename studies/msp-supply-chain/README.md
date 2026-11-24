@@ -11,14 +11,14 @@
 | Proposal and decisions | Done (shared doc) |
 | KEV and Breaking Trust pulled | Done |
 | Pilot coding | 14 counted incidents in `data/coded.csv`; Snowflake moved to `data/logged.csv` |
-| Other pools (CNCF, MITRE, VCDB, HHS, news) | To collect: see `TASK.md` |
+| Other pools (CNCF, MITRE, VCDB, HHS) | Pulled 2026-11-24 (Stage 1); news searches to do |
 | Dedupe and full coding | To do |
 | Second coder | To do |
 | Telemetry visibility | Done internally (see `telemetry/README.md`) |
 
-## Still to add from the shared Sheet
+## Sheet tabs (added 2026-11-24)
 
-Export these tabs of the coding Sheet as CSV into `data/candidates/` before Stage 3 of `TASK.md`:
+Exported from the coding Sheet as CSV into `data/candidates/`:
 
 - "Other candidates" → `sheet_other_candidates.csv` (40 rows)
 - "Source sweep" → `sheet_source_sweep.csv` (60 rows)
@@ -31,6 +31,7 @@ Export these tabs of the coding Sheet as CSV into `data/candidates/` before Stag
 4. Data freeze 30 November 2026.
 5. Inclusion rules as in `CLAUDE.md`.
 6. ConnectWise Cloud Backup reach: use the 162 tenants confirmed by Huntress.
+7. HHS business-associate rows keep the HHS web description; rows filed by hospitals or insurers that may share one vendor event are matched to a business associate by hand during Stage 2 (2026-11-24).
 
 ## Files
 

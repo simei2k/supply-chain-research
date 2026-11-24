@@ -1,4 +1,4 @@
-date,attack_name,codebase_owner,affected,relevance_firstpass,trust_boundary_firstpass,inclusion_firstpass,msp_flag
+Date (as in dataset),Name,Code location / owner,Downstream target,Relevance (first pass),Trust boundary (first pass),Inclusion (first pass),Already on our list
 2021-01-03,NullSoft Stocks,Unknown,App users,General supply-chain,Software update mechanism,Include (first pass),No
 2021-01-09,MacOS Gatekeepr Flaw,Apple,MacOS users,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
 2021-01-12,Mimecast,Mimecast,Mimecast M365 certificate users,MSP-relevant,Backup or security-management platform,Include (first pass),No

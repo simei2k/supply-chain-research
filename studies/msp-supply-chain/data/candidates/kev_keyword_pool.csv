@@ -1,0 +1,138 @@
+cveID,vendorProject,product,dateAdded,knownRansomwareCampaignUse,rmm_mgmt,remote_access,backup_secmgmt,psa_helpdesk,identity,supply_chain_flag,vulnerabilityName
+CVE-2019-8394,Zoho,ManageEngine,2021-11-03,Unknown,False,False,False,True,False,False,Zoho ManageEngine ServiceDesk Plus (SDP) File Upload Vulnerability
+CVE-2019-15752,Docker,Desktop Community Edition,2021-11-03,Unknown,False,False,False,False,False,True,Docker Desktop Community Edition Privilege Escalation Vulnerability
+CVE-2021-22986,F5,BIG-IP and BIG-IQ Centralized Management,2021-11-03,Known,False,False,False,False,True,False,F5 BIG-IP and BIG-IQ Centralized Management iControl REST Remote Code Execution Vulnerability
+CVE-2021-30116,Kaseya,Virtual System/Server Administrator (VSA),2021-11-03,Known,True,False,False,False,False,False,Kaseya Virtual System/Server Administrator (VSA) Information Disclosure Vulnerability
+CVE-2016-0185,Microsoft,Windows,2021-11-03,Unknown,False,False,False,False,False,True,Microsoft Windows Media Center Remote Code Execution Vulnerability
+CVE-2017-8759,Microsoft,.NET Framework,2021-11-03,Unknown,True,False,False,False,False,False,Microsoft .NET Framework Remote Code Execution Vulnerability
+CVE-2020-10148,SolarWinds,Orion,2021-11-03,Unknown,True,False,False,False,False,False,SolarWinds Orion Authentication Bypass Vulnerability
+CVE-2020-12271,Sophos,SFOS,2021-11-03,Known,False,True,True,False,False,False,Sophos SFOS SQL Injection Vulnerability
+CVE-2020-10189,Zoho,ManageEngine,2021-11-03,Unknown,True,False,False,False,True,False,Zoho ManageEngine Desktop Central File Upload Vulnerability
+CVE-2019-18187,Trend Micro,OfficeScan,2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro OfficeScan Directory Traversal Vulnerability
+CVE-2020-8467,Trend Micro,Apex One and OfficeScan,2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Apex One and OfficeScan Remote Code Execution Vulnerability
+CVE-2020-8468,Trend Micro,"Apex One, OfficeScan and Worry-Free Business Security Agents",2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Multiple Products Content Validation Escape Vulnerability
+CVE-2020-24557,Trend Micro,"Apex One, OfficeScan, and Worry-Free Business Security",2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Multiple Products Improper Access Control Vulnerability
+CVE-2020-8599,Trend Micro,Apex One and OfficeScan,2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Apex One and OfficeScan Authentication Bypass Vulnerability
+CVE-2021-36742,Trend Micro,"Apex One, Apex One as a Service, and Worry-Free Business Security",2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Multiple Products Improper Input Validation Vulnerability
+CVE-2021-36741,Trend Micro,"Apex One, Apex One as a Service, and Worry-Free Business Security",2021-11-03,Unknown,False,False,True,False,False,False,Trend Micro Multiple Products Improper Input Validation Vulnerability
+CVE-2019-18988,TeamViewer,Desktop,2021-11-03,Unknown,False,True,False,False,False,False,TeamViewer Desktop Bypass Remote Login Vulnerability
+CVE-2021-44077,Zoho,ManageEngine ServiceDesk Plus (SDP) / SupportCenter Plus,2021-12-01,Unknown,False,False,False,True,False,False,Zoho ManageEngine ServiceDesk Plus Remote Code Execution Vulnerability
+CVE-2021-37415,Zoho,ManageEngine ServiceDesk Plus (SDP),2021-12-01,Unknown,False,False,False,True,False,False,Zoho ManageEngine ServiceDesk Authentication Bypass Vulnerability
+CVE-2021-44515,Zoho,Desktop Central,2021-12-10,Unknown,True,False,False,False,True,False,Zoho Desktop Central Authentication Bypass Vulnerability
+CVE-2021-32648,October CMS,October CMS,2022-01-18,Unknown,False,False,True,False,False,False,October CMS Improper Authentication
+CVE-2015-2051,D-Link,DIR-645 Router,2022-02-10,Unknown,False,False,True,False,False,False,D-Link DIR-645 Router Remote Code Execution Vulnerability
+CVE-2018-11138,Quest,KACE System Management Appliance,2022-03-25,Known,True,False,False,False,False,False,Quest KACE System Management Appliance Remote Command Execution Vulnerability
+CVE-2019-0903,Microsoft,Graphics Device Interface (GDI),2022-03-25,Unknown,True,False,False,False,False,False,Microsoft GDI Remote Code Execution Vulnerability
+CVE-2020-2506,QNAP Systems,Helpdesk,2022-03-25,Unknown,False,False,False,True,False,False,QNAP Helpdesk Improper Access Control Vulnerability
+CVE-2020-25223,Sophos,SG UTM,2022-03-25,Unknown,False,False,True,False,False,False,Sophos SG UTM Remote Code Execution Vulnerability
+CVE-2015-4068,Arcserve,Unified Data Protection (UDP),2022-03-25,Unknown,False,False,True,False,False,False,Arcserve Unified Data Protection (UDP) Directory Traversal Vulnerability
+CVE-2013-1690,Mozilla,Firefox and Thunderbird,2022-03-28,Unknown,False,False,False,False,False,True,Mozilla Firefox and Thunderbird Denial-of-Service Vulnerability
+CVE-2021-20028,SonicWall,Secure Remote Access (SRA),2022-03-28,Known,False,True,False,False,False,False,SonicWall Secure Remote Access (SRA) SQL Injection Vulnerability
+CVE-2022-1040,Sophos,Firewall,2022-03-31,Unknown,False,False,True,False,False,False,Sophos Firewall Authentication Bypass Vulnerability
+CVE-2022-26871,Trend Micro,Apex Central,2022-03-31,Unknown,False,False,True,False,True,False,Trend Micro Apex Central Arbitrary File Upload Vulnerability
+CVE-2018-20753,Kaseya,Virtual System/Server Administrator (VSA),2022-04-13,Known,True,False,False,False,False,False,Kaseya VSA Remote Code Execution Vulnerability
+CVE-2018-19953,QNAP,Network Attached Storage (NAS),2022-05-24,Known,False,False,False,False,False,True,QNAP NAS File Station Cross-Site Scripting Vulnerability
+CVE-2018-19943,QNAP,Network Attached Storage (NAS),2022-05-24,Known,False,False,False,False,False,True,QNAP NAS File Station Cross-Site Scripting Vulnerability
+CVE-2017-8543,Microsoft,Windows,2022-05-24,Unknown,True,False,False,False,False,False,Microsoft Windows Search Remote Code Execution Vulnerability
+CVE-2017-18362,Kaseya,Virtual System/Server Administrator (VSA),2022-05-24,Known,True,False,False,True,False,False,Kaseya VSA SQL Injection Vulnerability
+CVE-2016-7256,Microsoft,Windows,2022-05-25,Unknown,True,False,False,False,False,False,Microsoft Windows Open Type Font Remote Code Execution Vulnerability
+CVE-2016-3393,Microsoft,Windows,2022-05-25,Unknown,True,False,False,False,False,False,Microsoft Windows Graphics Device Interface (GDI) Remote Code Execution Vulnerability
+CVE-2022-40139,Trend Micro,Apex One and Apex One as a Service,2022-09-15,Unknown,False,False,True,False,False,False,Trend Micro Apex One and Apex One as a Service Improper Validation Vulnerability
+CVE-2010-2568,Microsoft,Windows,2022-09-15,Unknown,False,False,False,False,False,True,Microsoft Windows Remote Code Execution Vulnerability
+CVE-2022-3236,Sophos,Firewall,2022-09-23,Unknown,False,False,True,False,False,False,Sophos Firewall Code Injection Vulnerability
+CVE-2022-26501,Veeam,Backup & Replication,2022-12-13,Known,False,False,True,False,False,True,Veeam Backup & Replication Remote Code Execution Vulnerability
+CVE-2022-26500,Veeam,Backup & Replication,2022-12-13,Known,False,False,True,False,False,True,Veeam Backup & Replication Remote Code Execution Vulnerability
+CVE-2022-36537,ZK Framework,AuUploader,2023-02-27,Known,False,False,True,False,False,False,ZK Framework AuUploader Unspecified Vulnerability
+CVE-2022-28810,Zoho,ManageEngine,2023-03-07,Unknown,False,False,True,False,False,False,Zoho ManageEngine ADSelfService Plus Remote Code Execution Vulnerability
+CVE-2021-27878,Veritas,Backup Exec Agent,2023-04-07,Known,False,False,True,False,False,False,Veritas Backup Exec Agent Command Execution Vulnerability
+CVE-2021-27877,Veritas,Backup Exec Agent,2023-04-07,Known,False,False,True,False,False,False,Veritas Backup Exec Agent Improper Authentication Vulnerability
+CVE-2021-27876,Veritas,Backup Exec Agent,2023-04-07,Known,False,False,True,False,False,False,Veritas Backup Exec Agent File Access Vulnerability
+CVE-2019-20500,D-Link,DWL-2600AP Access Point,2023-06-29,Unknown,False,False,True,False,False,False,D-Link DWL-2600AP Access Point Command Injection Vulnerability
+CVE-2023-35078,Ivanti,Endpoint Manager Mobile (EPMM),2023-07-25,Known,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile Authentication Bypass Vulnerability
+CVE-2023-35081,Ivanti,Endpoint Manager Mobile (EPMM),2023-07-31,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Path Traversal Vulnerability
+CVE-2023-27532,Veeam,Backup & Replication,2023-08-22,Known,False,False,True,False,False,False,Veeam Backup & Replication Cloud Connect Missing Authentication for Critical Function Vulnerability
+CVE-2014-8361,Realtek,SDK,2023-09-18,Unknown,False,False,False,False,False,True,Realtek SDK Improper Input Validation Vulnerability
+CVE-2021-3129,Laravel,Ignition,2023-09-18,Known,False,False,False,False,False,True,Laravel Ignition File Upload Vulnerability
+CVE-2023-41179,Trend Micro,Apex One and Worry-Free Business Security,2023-09-21,Unknown,False,False,True,False,False,False,Trend Micro Apex One and Worry-Free Business Security Remote Code Execution Vulnerability
+CVE-2018-14667,Red Hat,JBoss RichFaces Framework,2023-09-28,Unknown,False,False,False,False,False,True,Red Hat JBoss RichFaces Framework Expression Language Injection Vulnerability
+CVE-2023-44487,IETF,HTTP/2,2023-10-10,Unknown,False,False,True,False,False,False,HTTP/2 Rapid Reset Attack Vulnerability
+CVE-2023-20109,Cisco,IOS and IOS XE,2023-10-10,Unknown,False,False,False,False,False,True,Cisco IOS and IOS XE Group Encrypted Transport VPN Out-of-Bounds Write Vulnerability
+CVE-2023-47246,SysAid,SysAid Server,2023-11-13,Known,False,False,False,True,False,False,SysAid Server Path Traversal Vulnerability
+CVE-2023-1671,Sophos,Web Appliance,2023-11-16,Unknown,False,False,True,False,False,False,Sophos Web Appliance Command Injection Vulnerability
+CVE-2023-35082,Ivanti,Endpoint Manager Mobile (EPMM) and MobileIron Core,2024-01-18,Known,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) and MobileIron Core Authentication Bypass Vulnerability
+CVE-2024-1709,ConnectWise,ScreenConnect,2024-02-22,Known,True,False,False,False,False,False,ConnectWise ScreenConnect Authentication Bypass Vulnerability
+CVE-2023-48788,Fortinet,FortiClient EMS,2024-03-25,Known,False,False,True,False,False,False,Fortinet FortiClient EMS SQL Injection Vulnerability
+CVE-2021-44529,Ivanti,Endpoint Manager Cloud Service Appliance (EPM CSA),2024-03-25,Known,True,False,False,False,False,True,Ivanti Endpoint Manager Cloud Service Appliance (EPM CSA) Code Injection Vulnerability
+CVE-2024-29748,Android,Pixel,2024-04-04,Unknown,False,False,True,False,False,False,Android Pixel Privilege Escalation Vulnerability
+CVE-2023-7028,GitLab,GitLab CE/EE,2024-05-01,Unknown,False,False,True,False,False,False,GitLab Community and Enterprise Editions Improper Access Control Vulnerability
+CVE-2024-4978,Justice AV Solutions,Viewer,2024-05-29,Unknown,False,False,False,False,False,True,Justice AV Solutions (JAVS) Viewer Installer Embedded Malicious Code Vulnerability
+CVE-2024-24919,Check Point,Quantum Security Gateways,2024-05-30,Known,False,True,False,False,False,False,Check Point Quantum Security Gateways Information Disclosure Vulnerability
+CVE-2023-45249,Acronis,Cyber Infrastructure (ACI),2024-07-29,Unknown,False,False,True,False,False,False,Acronis Cyber Infrastructure (ACI) Insecure Default Password Vulnerability
+CVE-2024-28986,SolarWinds,Web Help Desk,2024-08-15,Unknown,False,False,False,True,False,False,SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability
+CVE-2024-29824,Ivanti,Endpoint Manager (EPM),2024-10-02,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager (EPM) SQL Injection Vulnerability
+CVE-2024-28987,SolarWinds,Web Help Desk,2024-10-15,Unknown,False,False,False,True,False,False,SolarWinds Web Help Desk Hardcoded Credential Vulnerability
+CVE-2024-40711,Veeam,Backup & Replication,2024-10-17,Known,False,False,True,False,False,False,Veeam Backup and Replication Deserialization Vulnerability
+CVE-2024-0012,Palo Alto Networks,PAN-OS,2024-11-18,Known,False,False,False,False,True,False,Palo Alto Networks PAN-OS Management Interface Authentication Bypass Vulnerability
+CVE-2024-9474,Palo Alto Networks,PAN-OS,2024-11-18,Known,False,False,False,False,True,False,Palo Alto Networks PAN-OS Management Interface OS Command Injection Vulnerability
+CVE-2024-12356,BeyondTrust,Privileged Remote Access (PRA) and Remote Support (RS),2024-12-19,Unknown,False,True,False,False,False,False,BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) Command Injection Vulnerability
+CVE-2024-12686,BeyondTrust,Privileged Remote Access (PRA) and Remote Support (RS),2025-01-13,Unknown,False,True,False,False,False,False,BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) OS Command Injection Vulnerability
+CVE-2025-23006,SonicWall,SMA1000 Appliances,2025-01-24,Known,False,False,False,False,True,False,SonicWall SMA1000 Appliances Deserialization Vulnerability
+CVE-2020-29574,Sophos,CyberoamOS,2025-02-06,Known,False,False,True,False,False,False,CyberoamOS (CROS) SQL Injection Vulnerability
+CVE-2020-15069,Sophos,XG Firewall,2025-02-06,Unknown,False,False,True,False,False,False,Sophos XG Firewall Buffer Overflow Vulnerability
+CVE-2024-57727,SimpleHelp,SimpleHelp,2025-02-13,Known,True,True,False,False,False,False,SimpleHelp Path Traversal Vulnerability
+CVE-2025-23209,Craft CMS,Craft CMS,2025-02-20,Unknown,False,False,True,False,False,False,Craft CMS Code Injection Vulnerability
+CVE-2024-13159,Ivanti,Endpoint Manager (EPM),2025-03-10,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager (EPM) Absolute Path Traversal Vulnerability
+CVE-2024-13160,Ivanti,Endpoint Manager (EPM),2025-03-10,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager (EPM) Absolute Path Traversal Vulnerability
+CVE-2024-13161,Ivanti,Endpoint Manager (EPM),2025-03-10,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager (EPM) Absolute Path Traversal Vulnerability
+CVE-2025-30066,tj-actions,changed-files GitHub Action,2025-03-18,Unknown,False,False,False,False,False,True,tj-actions/changed-files GitHub Action Embedded Malicious Code Vulnerability
+CVE-2024-48248,NAKIVO,Backup and Replication,2025-03-19,Unknown,False,False,True,False,False,False,NAKIVO Backup and Replication Absolute Path Traversal Vulnerability
+CVE-2025-30154,reviewdog,action-setup GitHub Action,2025-03-24,Unknown,False,False,False,False,False,True,reviewdog/action-setup GitHub Action Embedded Malicious Code Vulnerability
+CVE-2025-3928,Commvault,Web Server,2025-04-28,Unknown,False,False,True,False,False,False,Commvault Web Server Unspecified Vulnerability
+CVE-2025-34028,Commvault,Command Center,2025-05-02,Unknown,False,False,True,False,False,False,Commvault Command Center Path Traversal Vulnerability
+CVE-2025-4427,Ivanti,Endpoint Manager Mobile (EPMM),2025-05-19,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Authentication Bypass Vulnerability
+CVE-2025-4428,Ivanti,Endpoint Manager Mobile (EPMM),2025-05-19,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability
+CVE-2025-3935,ConnectWise,ScreenConnect,2025-06-02,Unknown,True,False,False,False,False,False,ConnectWise ScreenConnect Improper Authentication Vulnerability
+CVE-2019-6693,Fortinet,FortiOS,2025-06-25,Known,False,False,True,False,False,False,Fortinet FortiOS Use of Hard-Coded Credentials Vulnerability
+CVE-2025-2776,SysAid,SysAid On-Prem,2025-07-22,Unknown,False,False,False,True,False,False,SysAid On-Prem Improper Restriction of XML External Entity Reference Vulnerability
+CVE-2025-2775,SysAid,SysAid On-Prem,2025-07-22,Unknown,False,False,False,True,False,False,SysAid On-Prem Improper Restriction of XML External Entity Reference Vulnerability
+CVE-2025-8875,N-able,N-Central,2025-08-13,Unknown,True,False,False,False,True,False,N-able N-Central Insecure Deserialization Vulnerability
+CVE-2025-8876,N-able,N-Central,2025-08-13,Unknown,True,False,False,False,True,False,N-able N-Central Command Injection Vulnerability
+CVE-2025-54948,Trend Micro,Apex One,2025-08-18,Unknown,False,False,True,False,False,True,Trend Micro Apex One OS Command Injection Vulnerability
+CVE-2020-24363,TP-Link,TL-WA855RE,2025-09-02,Unknown,False,False,True,False,False,False,TP-link TL-WA855RE Missing Authentication for Critical Function Vulnerability
+CVE-2025-59230,Microsoft,Windows,2025-10-14,Unknown,False,True,False,False,False,False,Microsoft Windows Improper Access Control Vulnerability
+CVE-2025-61932,Motex,LANSCOPE Endpoint Manager,2025-10-22,Unknown,True,False,False,False,False,False,Motex LANSCOPE Endpoint Manager Improper Verification of Source of a Communication Channel Vulnerability
+CVE-2025-59374,ASUS,Live Update,2025-12-17,Unknown,False,False,False,False,False,True,ASUS Live Update Embedded Malicious Code Vulnerability
+CVE-2025-54313,Prettier,eslint-config-prettier,2026-01-22,Unknown,False,False,False,False,False,True,Prettier eslint-config-prettier Embedded Malicious Code Vulnerability
+CVE-2026-23760,SmarterTools,SmarterMail,2026-01-26,Known,False,False,True,False,False,False,SmarterTools SmarterMail Authentication Bypass Using an Alternate Path or Channel Vulnerability
+CVE-2026-1281,Ivanti,Endpoint Manager Mobile (EPMM),2026-01-29,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability
+CVE-2025-64328,Sangoma,FreePBX,2026-02-03,Unknown,True,True,False,False,False,False,Sangoma FreePBX OS Command Injection Vulnerability
+CVE-2025-40551,SolarWinds,Web Help Desk,2026-02-03,Unknown,False,False,False,True,False,False,SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability
+CVE-2026-21525,Microsoft,Windows,2026-02-10,Unknown,False,True,False,False,False,False,Microsoft Windows NULL Pointer Dereference Vulnerability
+CVE-2025-40536,SolarWinds,Web Help Desk,2026-02-12,Unknown,False,False,False,True,False,False,SolarWinds Web Help Desk Security Control Bypass Vulnerability
+CVE-2026-1731,BeyondTrust,Remote Support (RS) and Privileged Remote Access (PRA),2026-02-13,Known,False,True,False,False,False,False,BeyondTrust Remote Support (RS) and Privileged Remote Access (PRA) OS Command Injection Vulnerability
+CVE-2026-1603,Ivanti,Endpoint Manager (EPM),2026-03-09,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability
+CVE-2025-26399,SolarWinds,Web Help Desk,2026-03-09,Known,False,False,False,True,False,False,SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability
+CVE-2026-33634,Aquasecurity,Trivy,2026-03-26,Unknown,False,False,False,False,False,True,Aquasecurity Trivy Embedded Malicious Code Vulnerability
+CVE-2026-35616,Fortinet,FortiClient EMS,2026-04-06,Unknown,False,False,True,False,False,False,Fortinet FortiClient EMS Improper Access Control Vulnerability
+CVE-2026-1340,Ivanti,Endpoint Manager Mobile (EPMM),2026-04-08,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability
+CVE-2026-21643,Fortinet,FortiClient EMS,2026-04-13,Unknown,False,False,True,False,False,False,Fortinet FortiClient EMS SQL Injection Vulnerability
+CVE-2025-32975,Quest,KACE Systems Management Appliance (SMA),2026-04-20,Unknown,True,False,False,False,False,False,Quest KACE Systems Management Appliance (SMA) Improper Authentication Vulnerability
+CVE-2024-57726,SimpleHelp,SimpleHelp,2026-04-24,Known,True,False,False,False,False,False,SimpleHelp Missing Authorization Vulnerability
+CVE-2024-57728,SimpleHelp,SimpleHelp,2026-04-24,Known,True,False,False,False,False,False,SimpleHelp Path Traversal Vulnerability
+CVE-2024-1708,ConnectWise,ScreenConnect,2026-04-28,Known,True,False,False,False,False,False,ConnectWise ScreenConnect Path Traversal Vulnerability
+CVE-2026-6973,Ivanti,Endpoint Manager Mobile (EPMM),2026-05-07,Unknown,True,False,False,False,False,False,Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability
+CVE-2026-34926,Trend Micro,Apex One,2026-05-21,Unknown,False,False,True,False,False,True,Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability
+CVE-2026-8398,Daemon,Daemon Tools Lite,2026-05-27,Unknown,False,False,False,False,False,True,Daemon Tools Lite Embedded Malicious Code Vulnerability
+CVE-2026-48027,Nx,Nx Console,2026-05-27,Known,False,False,False,False,False,True,Nx Console Embedded Malicious Code Vulnerability
+CVE-2026-50751,Check Point,Security Gateway,2026-06-08,Known,False,True,False,False,False,False,Check Point Security Gateway Improper Authentication Vulnerability
+CVE-2026-48558,SimpleHelp,SimpleHelp,2026-06-29,Unknown,True,False,False,False,False,False,SimpleHelp Authentication Bypass Vulnerability
+CVE-2026-56155,Microsoft,Active Directory Federation Services,2026-07-14,Unknown,False,False,False,False,True,False,Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability
+CVE-2026-18577,N-able,N-central,2026-08-03,Unknown,True,False,False,False,True,False,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability
+CVE-2026-18556,N-able,N-central,2026-08-04,Unknown,True,False,False,False,True,False,N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability
+CVE-2026-86218,N-able,N-central,2026-09-08,Unknown,True,False,False,False,True,False,N-able N-central Static Code Injection Vulnerability
+CVE-2026-84869,ConnectWise,ScreenConnect,2026-09-11,Unknown,True,False,False,False,False,False,ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability
+CVE-2026-87886,Acronis,Backup,2026-09-16,Unknown,False,False,True,False,False,False,Acronis Backup Incorrect Default Permissions Vulnerability
+CVE-2026-85102,Check Point,Multiple Products,2026-09-22,Unknown,False,True,False,False,False,False,Check Point Multiple Products Improper Certificate Validation Vulnerability
+CVE-2026-102764,BeyondTrust,Remote Support,2026-10-16,Unknown,False,True,False,False,False,False,BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability
+CVE-2026-116606,Barracuda Networks,Barracuda Email Security Gateway (ESG),2026-11-10,Unknown,False,False,True,False,False,False,Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability
+CVE-2026-134624,N-able,MailAssure,2026-11-23,Unknown,True,False,False,False,False,False,N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability

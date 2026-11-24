@@ -1,0 +1,373 @@
+pool,match,event_id
+coded,Kaseya VSA,E001
+coded,SimpleHelp RMM,E002
+coded,SCKit,E005
+coded,ScreenConnect auth bypass,E007
+coded,3CX,E027
+coded,Codecov,E028
+coded,tj-actions,E030
+coded,Okta customer,E025
+coded,Salesloft,E031
+coded,Shai-Hulud,E039
+coded,Veeam,E208
+coded,JumpCloud,E026
+coded,Notepad,E045
+coded,Polyfill,E036
+logged,Snowflake,E207
+sheet_other,Kaseya VSA,E001
+sheet_other,SimpleHelp exploited,E002
+sheet_other,SCKit,E005
+sheet_other,Rogue modified ScreenConnect,E006
+sheet_other,BeyondTrust Remote Support API,E009
+sheet_other,ConnectWise environment breach,E008
+sheet_other,Rackspace hosted,E017
+sheet_other,CloudNordic,E019
+sheet_other,Tietoevry,E020
+sheet_other,Retailers breached,E021
+sheet_other,Okta breach via support,E022
+sheet_other,Help-desk refund,E023
+sheet_other,Ingram Micro,E024
+sheet_other,Okta customer support,E025
+sheet_other,JumpCloud,E026
+sheet_other,3CX,E027
+sheet_other,Codecov,E028
+sheet_other,CircleCI,E029
+sheet_other,tj-actions,E030
+sheet_other,Salesloft,E031
+sheet_other,Gainsight,E032
+sheet_other,Snowflake,E207
+sheet_other,MOVEit,E033
+sheet_other,Cleo,E034
+sheet_other,XZ Utils,E035
+sheet_other,Polyfill,E036
+sheet_other,Nx 's1ngularity',E037
+sheet_other,Shai-Hulud npm,E039
+sheet_other,Shai-Hulud 2.0,E040
+sheet_other,GlassWorm,E041
+sheet_other,Axios,E042
+sheet_other,Bitwarden,E043
+sheet_other,SAP npm,E044
+sheet_other,Notepad,E045
+sheet_other,Daemon Tools,E046
+sheet_other,Trivy,E047
+sheet_other,Mimecast,E048
+sheet_other,ClickStudios,E049
+sheet_other,Heroku,E050
+sheet_other,Comm100,E051
+sweep,ConnectWise Cloud Backup,E052
+sweep,MSP Process,E053
+sweep,Bomgar,E010
+sweep,N-able N-central auth bypass,E011
+sweep,SimpleHelp auth bypass,E004
+sweep,Silk Typhoon,E016
+sweep,Storm-1175,E015
+sweep,SonicWall,E054
+sweep,Chibitek,E214
+sweep,Integritek,E214
+sweep,A-ChieveMent,E214
+sweep,Connekted,E214
+sweep,Rackspace claimed,E018
+sweep,Vertel,E214
+sweep,Klue,E055
+sweep,JPMorgan,E056
+sweep,TriZetto,E058
+sweep,Conduent,E059
+sweep,Unlimited Technology,E060
+sweep,Veradigm,E061
+sweep,Ribbon,E062
+sweep,MainStreet,E063
+sweep,F5 source,E064
+sweep,Oracle E-Business,E065
+sweep,TransUnion,E031
+sweep,TeamPCP,E047
+sweep,TanStack,E066
+sweep,Megalodon,E067
+sweep,CPUID,E068
+sweep,Signed adware,E069
+sweep,AppsFlyer,E070
+sweep,Popular VS Code,E071
+sweep,Telus,E072
+sweep,Retool,E073
+sweep,ManageEngine xmlsec,E218
+sweep,Okta source,E074
+sweep,Auth0,E075
+sweep,Dropbox,E076
+sweep,Legitimate update,E077
+sweep,Docker Hub,E078
+sweep,WordPress theme,E079
+sweep,PHP self-hosted,E080
+sweep,Fake Dependabot,E081
+sweep,3proxy,E082
+sweep,Malware disguised,E083
+sweep,GitGot,E220
+sweep,Ultralytics,E084
+sweep,Kong,E085
+sweep,Rspack,E086
+sweep,npm debug,E087
+sweep,num2words,E088
+sweep,@solana,E089
+sweep,crates.io,E090
+sweep,React Native,E091
+sweep,lottie,E092
+sweep,rand-user,E093
+sweep,DogWifTool,E094
+sweep,MavenGate,E220
+sweep,POLONIUM,E095
+sweep,Moonstone,E220
+news,ScreenConnect rogue-client,E005
+news,CompuCom,E147
+news,Microsoft Entra Connect,E148
+news,Brevo,E149
+news,Qubole,E057
+news,CEVA,E150
+news,Cisco Duo,E151
+news,Railway,E152
+news,MCBS,E153
+news,Aesto,E154
+news,CareCloud,E155
+news,PJ&A,E156
+news,HealthEC,E157
+news,ESO Solutions,E158
+news,IDC Frontier,E159
+news,Inetum,E160
+news,Netgain,E161
+news,SoftServe,E162
+news,Tata,E163
+news,Motility,E164
+news,N-able N-central '4EverAble2Shell',E012
+news,N-able Mail Assure,E014
+news,N-able security breach,E012
+news,AnyDesk,E165
+news,Valtori,E166
+news,CTS,E167
+news,Mercury IT,E168
+news,Hacker forum,E169
+news,N-able N-central exploited by China,E011
+news,Südwestfalen,E170
+news,BridgePay,E171
+news,Crisis24,E172
+news,Anchorage,E173
+news,Unimed,E174
+news,Independent Living,E175
+news,Craneware,E176
+news,Paylogix,E177
+news,ActiveCloud,E178
+news,Beget,E179
+news,Cloudstar,E180
+news,FirstVDS,E181
+news,Swiss Cloud,E182
+news,AOMEI,E183
+news,Dahua,E184
+news,Genesys,E185
+news,OpsShield,E186
+news,Fireworks,E187
+news,LiteLLM,E047
+news,Wealthsimple,E188
+news,Infosys,E189
+news,Anodot,E190
+news,AI inference,E191
+news,LockBit,E192
+news,Play ransomware,E193
+news,Qilin,E194
+news,Nobelium,E195
+news,ShipMonk,E196
+news,Context AI,E197
+news,GoTo,E198
+news,Cloud-based service provider for airports,E199
+news,CDK,E200
+news,NetStandard,E201
+news,Advanced,E202
+news,SITA,E203
+news,Atento,E204
+bt,NullSoft,E096
+bt,MacOS Gatekeepr,E220
+bt,Mimecast,E048
+bt,Codecov,E028
+bt,MonPass,E097
+bt,Vigilante,E219
+bt,Adobe Acrobat,E220
+bt,ClickStudios,E049
+bt,Myanmar,E098
+bt,Microsoft Netfilter,E220
+bt,Kaseya,E001
+bt,Cryptocurrency Supply Chain,E099
+bt,TeamViewer Fake,E220
+bt,Wordpress themes,E079
+bt,UAParser,E100
+bt,coa and rc,E101
+bt,Colors.js,E102
+bt,SysJoker,E219
+bt,Lapsu$,E022
+bt,3CX,E027
+bt,Docker Honeypot,E219
+bt,Colors-xx,E219
+bt,peacenotwar,E103
+bt,Azure npm,E219
+bt,npm automation,E219
+bt,NodeJS typosquat,E219
+bt,Fix-Crash,E219
+bt,Heroku,E050
+bt,StarJacking,E219
+bt,Microsoft Exchange server,E220
+bt,F5 BIG-IP,E220
+bt,CrateDepression,E219
+bt,German npm,E219
+bt,ctx Takeover,E104
+bt,Saicoo,E105
+bt,MiMi,E106
+bt,This is not a package,E219
+bt,flame-vali,E219
+bt,PyPI *-modules,E219
+bt,JumpCloud,E026
+bt,PyPi InfoStealer,E219
+bt,JuiceStealer,E107
+bt,BackupBuddy,E220
+bt,Fishpig,E108
+bt,Material Tailwind,E219
+bt,dYdX,E109
+bt,Comm100,E051
+bt,SocGholish,E110
+bt,PyTorch,E111
+bt,Lolip0p,E219
+bt,Yandex,E219
+bt,PyPi Malicius,E219
+bt,NuGet,E219
+bt,NPM Banking,E219
+bt,ChatGPT Chrome,E219
+bt,Evasive Panda,E112
+bt,MSI Key,E113
+bt,SpinOk,E114
+bt,MOVEit,E033
+bt,Chrome Extension Bonanza,E219
+bt,PyPI Password,E115
+bt,Ghostly,E116
+cncf,Solana,E089
+cncf,Polyfill,E036
+cncf,Malware Disguised,E083
+cncf,3proxy,E082
+cncf,xz,E035
+cncf,GitGot,E220
+cncf,ManageEngine,E218
+cncf,Retool,E073
+cncf,Fake Dependabot,E081
+cncf,Okta Source,E074
+cncf,Auth0,E075
+cncf,RubyGems,E220
+cncf,Legitimate software update,E077
+cncf,Docker Hub,E078
+cncf,Chat100,E051
+cncf,Dropbox,E076
+cncf,Intel Alder,E220
+cncf,PEAR,E220
+cncf,npm Library ‘node-ipc’,E103
+cncf,npm Libraries ‘colors’,E102
+cncf,GCP Golang,E220
+cncf,WordPress theme,E079
+cncf,Remote code injection in Log4j,E220
+cncf,Compromise of npm packages coa,E101
+cncf,Compromise of ua-parser,E100
+cncf,The klow,E219
+cncf,PHP self-hosted,E080
+cncf,Homebrew,E220
+cncf,Codecov,E028
+cncf,Repojacking,E220
+cncf,VSCode GitHub,E220
+mitre,SolarWinds,E215
+mitre,3CX,E027
+vcdb,fb411460,E120
+vcdb,c6302210,E121
+vcdb,9ad8d9a0,E122
+vcdb,e7f288a0,E123
+vcdb,bd056f50,E001
+vcdb,8ef8d6e0,E124
+vcdb,ccf9d660,E125
+vcdb,6f951100,E126
+vcdb,ded9a9b0,E127
+vcdb,89c70c60,E128
+vcdb,D6994E65,E129
+vcdb,E7CFB8E6,E130
+vcdb,12A05887,E059
+vcdb,82AAE7E2,E131
+vcdb,538062C0,E132
+vcdb,DDED1838,E133
+vcdb,E4D6823E,E134
+vcdb,0E308D20,E135
+vcdb,1679091C,E136
+vcdb,ECCBC87E,E136
+vcdb,E4DA3B7F,E136
+vcdb,C1037873,E137
+vcdb,179B6A6D,E138
+vcdb,35040EB1,E139
+vcdb,C81E728D,E136
+vcdb,82B3AACE,E140
+vcdb,A87FF679,E136
+vcdb,675C7B02,E141
+vcdb,7D86EDE3,E142
+vcdb,8F14E45F,E136
+vcdb,BBEE2583,E143
+vcdb,62666B4E,E144
+vcdb,C4CA4238,E136
+vcdb,13CBB4AD,E145
+vcdb,94733B5A,E146
+kev,Kaseya Virtual System/Server Administrator 2021,E001
+kev,Kaseya Virtual System/Server Administrator 2022,E216
+kev,SimpleHelp SimpleHelp 2025,E002
+kev,SimpleHelp SimpleHelp 2026,E004
+kev,ConnectWise ScreenConnect 2024,E007
+kev,ConnectWise ScreenConnect 2025,E008
+kev,ConnectWise ScreenConnect 2026,E005
+kev,BeyondTrust Privileged Remote Access 2024,E009
+kev,BeyondTrust Privileged Remote Access 2025,E009
+kev,BeyondTrust Remote Support 2026,E010
+kev,N-able N-central 2026,E011
+kev,N-able MailAssure 2026,E014
+kev,Aquasecurity Trivy 2026,E047
+kev,tj-actions changed-files GitHub Action 2025,E030
+kev,reviewdog action-setup GitHub Action 2025,E030
+kev,Nx Nx Console 2026,E038
+kev,Daemon Daemon Tools Lite 2026,E046
+kev,SolarWinds Orion 2021,E215
+kev,Veeam Backup & Replication 2024,E208
+kev,Zoho ManageEngine 2023,E218
+kev,ASUS Live Update 2025,E217
+kev,Prettier eslint-config-prettier 2026,E205
+kev,Justice AV Solutions Viewer 2024,E206
+kev,Ivanti Endpoint Manager Mobile 2026,E166
+hhs,Change Healthcare,E211
+hhs,Conduent,E059
+hhs,Aesto,E154
+hhs,Perry Johnson,E156
+hhs,OneTouchPoint,E212
+hhs,CareCloud,E155
+hhs,Eye Care Leaders,E209
+hhs,Accellion,E120
+hhs,Nationwide Recovery,E210
+hhs,Netgain,E161
+hhs,Oracle Health,E137
+hhs,Welltok,E033
+hhs,(MOVEit Transfer),E033
+hhs,Maximus,E033
+hhs,TMG Health,E033
+hhs,HealthEC,E157
+hhs,ESO Solutions,E158
+hhs,Independent Living Systems,E175
+hhs,Unlimited Technology Systems,E060
+hhs,TriZetto,E058
+hhs,Veradigm,E061
+hhs,CaptureRx,E122
+hhs,MCG Health,E124
+hhs,Elekta,E213
+hhs,DermCare,E139
+hhs,Kelly Benefits,E132
+hhs,Clinical Registry Solutions,E145
+hhs,Networking Technology,E146
+hhs,Ocuco,E142
+news,SimpleHelp RMM exploited at a utility,E003
+hhs,MCBS,E153
+hhs,Paylogix,E177
+hhs,Craneware,E176
+hhs,Kelly & Associates,E132
+hhs,Philips Respironics,E033
+hhs,Westat,E033
+hhs,Radius Global Solutions,E033
+hhs,Community Health Systems Professional,E221

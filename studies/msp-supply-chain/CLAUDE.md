@@ -40,7 +40,8 @@ Every excluded case goes to `data/logged.csv` with its reason and rule.
 | `search_log.csv` | One row per search run |
 | `data/raw/` | Small public pulls, dated (KEV CSV) |
 | `data/candidates/` | Candidate pools before deduplication |
-| `data/candidates.csv` | All pools, deduplicated (to be built) |
+| `data/candidates.csv` | All pools, deduplicated: one row per supplier event with status (built by `scripts/build_candidates.py`) |
+| `data/dedupe/` | Hand dedupe decisions: `events.csv` (one row per event), `event_map.csv` (pool row to event) and `hhs_relevance.csv` (relevance review of HHS vendors) |
 | `data/coded.csv` | Counted incidents, coded |
 | `data/logged.csv` | Excluded cases, with reasons |
 | `data/hhs_ba_matches.csv` | Hand matches of HHS covered-entity rows to their business associate, with source |

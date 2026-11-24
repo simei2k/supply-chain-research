@@ -43,6 +43,7 @@ Every excluded case goes to `data/logged.csv` with its reason and rule.
 | `data/candidates.csv` | All pools, deduplicated (to be built) |
 | `data/coded.csv` | Counted incidents, coded |
 | `data/logged.csv` | Excluded cases, with reasons |
+| `data/hhs_ba_matches.csv` | Hand matches of HHS covered-entity rows to their business associate, with source |
 | `scripts/` | KEV filters and any collection or dedupe scripts |
 | `telemetry/README.md` | Plain-language note only; no internal data |
 

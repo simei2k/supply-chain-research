@@ -40,3 +40,10 @@ run_date,source_or_site,query_terms,date_from,date_to,method,results_seen,candid
 2026-11-24,all five news outlets,MSP breach customers ransomware 2024,2021-01-01,2026-11-30,WebSearch (site-restricted),10,0,"Year check. LockBit, ScreenConnect, Play, DragonForce already listed"
 2026-11-24,all five news outlets,IT service provider cyberattack clients 2021,2021-01-01,2026-11-30,WebSearch (site-restricted),10,2,"Year check. SITA; Atento. Kaseya, Nobelium, CompuCom listed"
 2026-11-24,STOP,Stopping rule met,2021-01-01,2026-11-30,WebSearch (site-restricted),0,0,"Stopped 2026-11-24 after 40 queries: 2023 and 2024 year checks and the last outlet passes (Dark Reading supply chain, CISA, NCSC/ACSC/CCCS, extended web) each added fewer than two new MSP-specific or MSP-relevant candidates"
+2026-11-24,bleepingcomputer.com,tag page: supply-chain-attack (all pages to 2021),2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),223,,Second pass; 691 unique headlines screened by hand
+2026-11-24,bleepingcomputer.com,tag page: managed-service-provider,2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),17,,Second pass; 691 unique headlines screened by hand
+2026-11-24,thehackernews.com,label feed: Supply Chain Attack,2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),41,,Second pass; 691 unique headlines screened by hand
+2026-11-24,thehackernews.com,label feed: Supply Chain,2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),166,,Second pass; 691 unique headlines screened by hand
+2026-11-24,thehackernews.com,label feed: Supply Chain Security,2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),142,,Second pass; 691 unique headlines screened by hand
+2026-11-24,thehackernews.com,label feed: Software Supply Chain,2021-01-01,2026-11-30,Headline listing (scripts/harvest_headlines.py),109,,Second pass; 691 unique headlines screened by hand
+2026-11-24,SECOND PASS,Headline screen result,691,,,691,12,"12 leads researched by subagents: 7 count, 3 logged, 2 to verify; 1 merged into existing ConnectWise Cloud Backup event"

@@ -41,3 +41,4 @@ Search each product term with "breach" OR "exploited" OR "compromised" OR "custo
 
 | Date added | Term | Why |
 | --- | --- | --- |
+| 2026-11-24 | Headline listings: BleepingComputer tags supply-chain-attack and managed-service-provider; The Hacker News labels Supply Chain Attack, Supply Chain, Supply Chain Security, Software Supply Chain (titles, links and dates only, via `scripts/harvest_headlines.py`) | Second pass: MSP subset too thin after Stage 3. Each headline screened by hand for a supplier compromise that could involve MSPs; those leads researched individually |

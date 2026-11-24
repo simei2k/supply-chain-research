@@ -43,6 +43,7 @@ bt = pd.read_csv(os.path.join(C, "breaking_trust_firstpass.csv")); bt.columns = 
 add("bt", bt, "name", "date")
 add("cncf", pd.read_csv(os.path.join(C, "cncf_candidates.csv")), "name", "year", "links")
 add("mitre", pd.read_csv(os.path.join(C, "mitre_campaigns.csv")), "name", "first_seen", "attack_url")
+add("headlines", pd.read_csv(os.path.join(C, "headline_candidates.csv")), "incident", "date", "headline_link")
 add("vcdb", pd.read_csv(os.path.join(C, "vcdb_partner.csv")), "victim", "year", "reference", match="incident_id")
 
 pool_rows = pd.DataFrame(rows)

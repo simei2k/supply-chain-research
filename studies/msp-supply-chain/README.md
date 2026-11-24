@@ -4,6 +4,44 @@
 
 **Article message:** supply-chain incidents will keep happening and much of the pattern is public. MSPs can rank the trusted connections they run by how often each kind is compromised and how much damage it can do, then switch on the right controls and watch for the matching behaviours.
 
+## Methodology (outline, as of 2026-11-24)
+
+1. **Scope and unit.** Public incidents from 1 January 2021 to the freeze on 30 November 2026. One incident is one supplier event, counted once however many reports cover it. Counting needs a primary source: a government advisory, vendor disclosure, regulatory filing or incident-response report.
+2. **Candidate pools.** Candidates come from structured sources and from searches. Versions and pull dates are in `sources.md`.
+   - Structured: CISA KEV, filtered to management, remote-access, backup, security and identity products; Atlantic Council Breaking Trust; the CNCF catalogue; MITRE ATT&CK campaigns using T1195 or T1199; VCDB incidents with a partner route in; HHS OCR breaches involving a business associate.
+   - Searches: 40 fixed, logged queries across five security outlets and four government agencies, ending at a stated stopping rule (`search_terms.md`, `search_log.csv`).
+   - Earlier manual sweeps: the coding Sheet's two tabs.
+3. **Inclusion.** An incident counts only when a supplier, service provider or their product was compromised or abused to reach that supplier's customers (`CLAUDE.md`). The following are logged with a reason, not counted:
+   - customer-credential abuse on a platform;
+   - flaws disclosed but not exploited;
+   - packages published by attackers;
+   - out-of-period events.
+   
+   KEV flaws exploited on a provider's own server count only when a report shows downstream reach; otherwise they are tallied as "exploited, no downstream reach reported".
+4. **Deduplication.** Every pool row is mapped by hand to one event (`data/dedupe/`). Mass-exploitation campaigns of one product count as one incident. `scripts/build_candidates.py` rebuilds `data/candidates.csv` and stops if any row is left unmapped. HHS rows are grouped by business associate.
+5. **Relevance.** Each event is coded:
+   - MSP-specific: an MSP or IT service provider is directly involved.
+   - MSP-relevant: technology used to manage many customer environments.
+   - General: everything else.
+   
+   The main ranking uses the first two. The all-events ranking is context.
+6. **Coding.** Counted incidents are coded from primary sources against `codebook.md`:
+   - trust boundary (11 categories);
+   - capability as reported (tiers 1 to 4);
+   - reach in organisations (exact figure or band);
+   - 11 behaviours mapped to ATT&CK;
+   - consequences.
+   
+   Use `NR` unless a source states something did not happen. Code nothing from news alone.
+7. **Analysis.** Trust boundaries are ranked by frequency (prevalence) and by the share of "priority cell" incidents: capability tier 3 or 4 with reach of dozens or more (impact). Behaviours seen in 60% or more of priority-cell incidents are reported as detection priorities. Four signals with preset thresholds test whether the data can support the article (`TASK.md` Stage 5).
+8. **Reliability.** A second coder codes a random 20% of counted incidents. The target is Cohen's kappa of 0.7 or more on trust boundary and capability tier.
+
+**Known limits.**
+- Public reporting under-represents small MSP incidents and over-represents US healthcare (HHS).
+- Reach and behaviours are often unreported.
+- News searches favour recent years.
+- Relevance and trust-boundary coding involve judgement, which the second coder checks.
+
 ## Status (2026-11-24)
 
 | Part | Status |

@@ -2,8 +2,9 @@
 
 Usage: python scripts/harvest_headlines.py data/candidates/headlines_raw.csv
 Sources (method added 2026-11-24, see search_terms.md "Added later"):
-  - BleepingComputer tag pages: supply-chain-attack, managed-service-provider
-  - The Hacker News Blogger label feeds: "Supply Chain Attack", "Supply Chain", "Supply Chain Security", "Software Supply Chain"
+  - BleepingComputer tag pages: supply-chain-attack, managed-service-provider, ransomware (ransomware added in third pass)
+  - The Hacker News Blogger label feeds: "Supply Chain Attack", "Supply Chain", "Supply Chain Security", "Software Supply Chain";
+    third pass adds "Cyber Attack", "Threat Intelligence" (site menu categories) and MSP-type labels
 Waits 2 seconds between requests.
 """
 import csv, html, json, re, sys, time
@@ -59,9 +60,11 @@ def thn_label(label):
         start += len(entries)
         time.sleep(2)
 
-for t in ("supply-chain-attack", "managed-service-provider"):
+for t in ("supply-chain-attack", "managed-service-provider", "ransomware"):
     bc_tag(t)
-for lab in ("Supply Chain Attack", "Supply Chain", "Supply Chain Security", "Software Supply Chain"):
+for lab in ("Supply Chain Attack", "Supply Chain", "Supply Chain Security", "Software Supply Chain",
+            "Cyber Attack", "Threat Intelligence", "Managed Service Provider", "Managed Service Providers", "MSP", "RMM",
+            "Remote Monitoring", "Remote Access", "ScreenConnect", "ConnectWise", "Kaseya", "Third-Party Risk", "OAuth"):
     thn_label(lab)
 
 seen, out = set(), []

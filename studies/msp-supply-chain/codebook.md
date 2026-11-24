@@ -1,0 +1,90 @@
+# Codebook
+
+Columns of `data/coded.csv`, in order. Values: `Y` yes, `N` no (only when a source says so), `NR` not reported.
+
+| Column | Allowed values / format | Notes |
+| --- | --- | --- |
+| ID | `P01`... for pilot, `I001`... for new rows | Unique |
+| Incident | Short name | Name the event, not just the vendor |
+| Year | YYYY | Year the compromise was disclosed |
+| Relevance | MSP-specific; MSP-relevant; General supply-chain | MSP-specific: directly involves an MSP, MSSP or service provider. MSP-relevant: technology commonly used to manage many customer environments |
+| Trust boundary | One of the eleven below | The compromised component |
+| Access path | Free text | How the attacker got in, e.g. "Exploited flaw (CVE-...)", "Stolen app secret" |
+| Read data | Y / N / NR | Capability as reported |
+| Access credentials | Y / N / NR | Credentials or tokens |
+| Execute commands | Y / N / NR | |
+| Deploy software | Y / N / NR | |
+| Create/modify accounts | Y / N / NR | |
+| Change security settings | Y / N / NR | |
+| Disable protection | Y / N / NR | |
+| Alter backup | Y / N / NR | Alter backup or recovery |
+| Multiple tenants | Y / N / NR | Feeds reach, not tier |
+| Lateral movement | Y / N / NR | Across endpoints |
+| Capability tier (reported) | `1 Data access`; `2 Endpoint action`; `3 Software deployment`; `4 Security controls` | Highest tier reached |
+| Orgs reached (as reported) | Free text with the figure and who reported it | |
+| Reach band | Single organisation; Several; Dozens; Hundreds or more; Unknown; Unknown (more than one) | Several = 2 to 9, Dozens = 10 to 99 |
+| Crossed customer boundary | Y / N / NR | |
+| Shell/PowerShell | Y / N / NR | Behaviour |
+| Remote command | Y / N / NR | Behaviour |
+| Software deployment | Y / N / NR | Behaviour |
+| Services/tasks | Y / N / NR | New services or scheduled tasks |
+| Credential access | Y / N / NR | Behaviour |
+| Security-tool interference | Y / N / NR | Exclusions, protection turned off, services stopped |
+| Backup disruption | Y / N / NR | Behaviour |
+| Lateral movement (beh.) | Y / N / NR | Behaviour |
+| Archive creation | Y / N / NR | Behaviour |
+| Exfiltration | Y / N / NR | Behaviour |
+| Ransomware | Y / N / NR | Behaviour |
+| Primary source | URLs separated by ` ; ` | At least one primary source |
+| Coding notes | Free text | Uncertainty, conflicting figures, dedupe decisions |
+| Data exposed | Y / N / NR | Consequence |
+| People or orgs exposed | Number and unit, with date of the figure | Latest primary figure |
+| Service disruption | Y / N / NR | Consequence |
+| Ransomware or encryption | Y / N / NR | Consequence |
+| Coder | Name or `claude-<session>` | |
+| Coded on | YYYY-MM-DD | |
+
+## Trust boundaries (eleven)
+
+1. Software update mechanism
+2. Build or release pipeline
+3. Vendor or developer account
+4. RMM or management platform
+5. Remote-access tool
+6. Cloud integration
+7. API credential or token
+8. Plugin, extension or package
+9. Backup or security-management platform
+10. Identity provider
+11. Service provider holding customer data
+
+## Capability tiers
+
+| Tier | Includes |
+| --- | --- |
+| 1 Data access | Read data, access credentials or tokens |
+| 2 Endpoint action | Execute commands, lateral movement |
+| 3 Software deployment | Deploy software, create or modify accounts |
+| 4 Security controls | Change security settings, disable protection, alter backup |
+
+**Priority cell:** tier 3 or 4 with reach of Dozens or Hundreds or more.
+
+## Behaviours mapped to MITRE ATT&CK
+
+| Behaviour | Technique (starting point) |
+| --- | --- |
+| Shell/PowerShell | T1059 |
+| Remote command | T1219, T1072 |
+| Software deployment | T1072, T1105 |
+| Services/tasks | T1543, T1053 |
+| Credential access | T1003, T1552 |
+| Security-tool interference | T1562.001 |
+| Backup disruption | T1490 |
+| Lateral movement | T1021, T1550 |
+| Archive creation | T1560 |
+| Exfiltration | T1041, T1567 |
+| Ransomware | T1486 |
+
+## Reliability
+
+A second coder codes a random 20% of counted incidents. Target Cohen's kappa of 0.7 or more on trust boundary and capability tier.

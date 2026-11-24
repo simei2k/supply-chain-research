@@ -1,0 +1,64 @@
+date,attack_name,codebase_owner,affected,relevance_firstpass,trust_boundary_firstpass,inclusion_firstpass,msp_flag
+2021-01-03,NullSoft Stocks,Unknown,App users,General supply-chain,Software update mechanism,Include (first pass),No
+2021-01-09,MacOS Gatekeepr Flaw,Apple,MacOS users,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2021-01-12,Mimecast,Mimecast,Mimecast M365 certificate users,MSP-relevant,Backup or security-management platform,Include (first pass),No
+2021-01-31,Codecov,Codecov,Codecov customers,General supply-chain,Build or release pipeline,Include (first pass),Yes (P06)
+2021-02-08,MonPass,MonPass,MonPass users,General supply-chain,Software update mechanism,Include (first pass),No
+2021-03-01,"Vigilante PyPI, npm dependency confusion copycats","PyPl, npm",Package users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2021-03-16,Adobe Acrobat and Reader zero-day,Adobe,Adobe Reader users,General supply-chain,Software update mechanism,Check inclusion: may not be a supply-chain compromise,No
+2021-04-20,ClickStudios/Passwordstate,ClickStudios,ClickStudios customers,MSP-relevant,Software update mechanism,Include (first pass),No
+2021-06-02,Myanmar Presidential Office Website,Myanmar Presidential Website,Burmese/Myanma constituents,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2021-06-26,Microsoft Netfilter,Microsoft Driver,Microsoft system gamers,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2021-07-02,Kaseya,Kaseya,Kaseya's customers / Managed Service Providers (MSPs) and their customers,MSP-specific,RMM or management platform,Include (first pass),Yes (P01)
+2021-09-17,Cryptocurrency Supply Chain Attack - SushiSwap,"Sushi Swap's ""MiSo-studio"" repository",Sushi users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2021-09-20,TeamViewer Fake Expired Certificate,Windows,Windows IIS Users,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2021-10-15,Wordpress themes and plugins,AccessPress,Wordpress users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2021-10-23,UAParser.js,Faisal Salman,uaparser dependents,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2021-11-04,coa and rc,NPM,rc and coa dependents,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-01-09,Colors.js/faker.js,npm,Users of colors.js and faker.js,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-01-11,SysJoker,NPM,Select target organizations,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-01-16,Lapsu$ + Okta,Okta,Users of the Okta identify management platform,MSP-specific,Identity provider,Include (first pass),Yes (Other candidates)
+2022-02-01,3CX + X_Trader,"3CX, Trading Technologies",Users of 3CX's VoIP software,General supply-chain,Build or release pipeline,Include (first pass),Yes (P05)
+2022-02-27,Docker Honeypot Attacks,Uptyc and CrowdStrike,Russian and Belarusian websites,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2022-03-03,Colors-xx typosquatting,npm,Users of colors library,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-03-07,peacenotwar,npm,Russian and Belarussian dependent applications,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-03-24,Azure npm Typosquatting,npm,Dependent packages,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-03-28,npm automation,npm,Users of npm packages developed by full-auto generated accounts typosquatting around Azure dependencies,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-03-28,NodeJS typosquat,npm,"Users trying to pulldown similarly named components to packages to popular azur, rukkaz and azbit development packages",General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-04-01,Fix-Crash npm,npm,"Users trying to pulldown a library to help ""fix crashes""",General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-04-07,Heroku + Travis CI OAuth Token Theft,Oauth tokens of Heroku and Travis CI,Users of applications of Heroku and Travis-CI,General supply-chain,API credential or token,Include (first pass),No
+2022-04-19,StarJacking,"npm, PyPi, Yarn","Users of npm, PyPI, and Yarn package managers",General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-04-20,Microsoft Exchange server backdoors - Hive Ransomware,Microsoft Exchange Server,Microsoft Exchange Server users,General supply-chain,Software update mechanism,Check inclusion: may not be a supply-chain compromise,No
+2022-05-09,F5 BIG-IP Round 2,F5,Users of the BIG-IP system,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2022-05-10,CrateDepression,crates.io,Dependent CI pipelines,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-05-11,German npm dependency confusion attack,npm,User companies,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-05-14,ctx Takeover,Defunct accounts owning open source projects,OSS dependent projects,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-05-17,Saicoo CAC Reader Malware,Saicoo,CAC Reader Users,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2022-06-01,MiMi,MiMi,MiMi users,General supply-chain,Software update mechanism,Include (first pass),No
+2022-06-10,This is not a package,CyberArk,CyberArk developers,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-06-17,flame-vali,npm,Dowloading users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-06-24,PyPI *-modules,PyPI Repository,Downloading users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-07-20,JumpCloud Chollima,JumpCloud,JumpCloud customers,MSP-relevant,Identity provider,Include (first pass),Yes (P13)
+2022-08-08,PyPi InfoStealer,PyPI Repository,Users trying to pulldown pypi packages,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-01,JuiceStealer/JuiceLedger,PyPI,exotel and spam dependents,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-09,BackupBuddy,iThemes,BackupBuddy users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-13,Fishpig Magento,Fishpig,Users of Fishpig extensions for Magento 2,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-22,Material Tailwind,NPM,Materal Design and Tailwind CSS users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-23,dYdX npm compromise,"NPM, dYdX",dYdX users,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2022-09-26,Comm100,Comm100,Comm100 customers,General supply-chain,Software update mechanism,Include (first pass),No
+2022-11-02,SocGholish in the News,Undisclosed Media Company,Visitors of news websites,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2023-01-01,PyTorch Dependency Confusion,PyPI,Users of PyTorch-nightly,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-01-16,Lolip0p typosquatting campaig,PyPI Repository,Users pulling down valuable PyPi packages for development,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-01-30,Yandex Source Code Typosquat,npm,Users attempting to pull down Yandex Source Code packages,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-02-13,PyPi Malicius Browser Extensions,PyPI,Users of Browser-Based Crypto Wallets and websites,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-03-21,NuGet First Recorded Typosquats,NuGet,Users of NuGet packages (.NET software developers),General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-04-05,NPM Banking Attack,Unknown,Unknown,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-04-23,ChatGPT Chrome Extension,Chrome web store,Users of malicious web extension,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-04-26,Evasive Panda MsgBot,Tencent,NGO members in specific provinces who used the Tencent QQ messaging app,General supply-chain,Software update mechanism,Include (first pass),No
+2023-05-10,MSI Key Leak,MSI,MSI component users,General supply-chain,Vendor or developer account,Include (first pass),No
+2023-05-23,SpinOk,Android Apps,Users of infected Android Apps,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2023-05-27,MOVEit,MOVEit,Users of MOVEit and users of software services that relied on MOVEit,General supply-chain,Cloud integration,Include (first pass),Yes (Other candidates)
+2023-06-02,Chrome Extension Bonanza,Chrome Web Store,Users of malicious web extension,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-06-05,SpinOk Redux,Android Apps,Users of infected Android apps,General supply-chain,To code,Check inclusion: may not be a supply-chain compromise,No
+2023-06-12,PyPI Password Theft,PyPI maintainers,Downloaders of packages with infected dependency,General supply-chain,"Plugin, extension or package",Include (first pass),No
+2023-06-15,Ghostly S3 Buckets,npm,Users of  npm packages with expired/orphaned S3 buckets,General supply-chain,"Plugin, extension or package",Include (first pass),No

@@ -1,0 +1,2 @@
+ID,Incident,Year,Reason not counted,Rule,Source,Logged on
+P10,Snowflake customer instances (UNC5537),2024,Attackers used each customer's own stolen credentials; supplier not compromised,Customer credential abuse on a platform,https://cloud.google.com/blog/topics/threat-intelligence/unc5537-snowflake-data-theft-extortion,2026-11-24

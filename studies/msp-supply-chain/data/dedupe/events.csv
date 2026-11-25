@@ -145,7 +145,7 @@ E147,CompuCom MSP DarkSide ransomware,2021,MSP-specific,Service provider holding
 E148,Microsoft Entra Connect Health flaw exploited to pull tenant data,2026,MSP-relevant,Identity provider,To verify,,Stage 4A: no advisory found; may be confused with the MSP Process incident (Nov 2026)
 E149,Brevo stolen Cloudflare API key used to inject scripts into customer sites,2026,General supply-chain,API credential or token,Counted (first pass),,
 E150,CEVA Logistics breach exposes multiple retailers' customer data,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E151,Cisco Duo telephony (SMS) provider breach,2023,MSP-relevant,Service provider holding customer data,Counted (first pass),,
+E151,Cisco Duo telephony (SMS) provider breach,2024,MSP-relevant,Service provider holding customer data,Counted (first pass),,Stage 4B: disclosed April 2024
 E152,Railway platform breach exposed linked-account tokens,2025,General supply-chain,API credential or token,Counted (first pass),,
 E153,MCBS medical billing breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E154,Aesto Health records-migration SaaS breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -174,7 +174,7 @@ E176,Craneware hospital software provider breach,2026,General supply-chain,Servi
 E177,Paylogix benefits platform breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E178,ActiveCloud (Belarus) ransomware,2026,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E179,Beget (Russia) destructive attack,2026,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4A: hosting management layer used to wipe customer VPS/S3/Kubernetes data (Beget Telegram statements)
-E180,Cloudstar hosting ransomware,2023,MSP-specific,Service provider holding customer data,Counted (first pass),,
+E180,Cloudstar hosting ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4B: disclosed July 2021
 E181,FirstVDS hosting breach,2026,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4A: VMmanager 6 flaw used to mount customer disks and steal credentials; date 2026-10
 E182,Swiss Cloud hosting ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E183,AOMEI update channel hijacked,2026,MSP-relevant,Software update mechanism,Counted (first pass),,
@@ -192,7 +192,7 @@ E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,RMM or manage
 E195,Nobelium campaign against cloud resellers and MSPs (delegated admin),2021,MSP-specific,Cloud integration,Counted (first pass),,
 E196,ShipMonk fulfilment provider breach (Metabase zero-day),2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E197,Context AI hack exposes Vercel customer credentials,2026,General supply-chain,API credential or token,Counted (first pass),,
-E198,GoTo breach; customers' encrypted backups stolen,2023,MSP-relevant,Backup or security-management platform,Counted (first pass),,Linked to LastPass 2022
+E198,GoTo breach; customers' encrypted backups stolen,2023,MSP-relevant,Service provider holding customer data,Counted (first pass),,"Linked to LastPass 2022; Stage 4B: stolen data were GoTo product databases, not a backup product"
 E199,Cloud service provider for airports compromised (PA systems),2025,General supply-chain,Cloud integration,Counted (first pass),,
 E200,CDK Global ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E201,NetStandard (Kansas MSP) cloud services attack,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,

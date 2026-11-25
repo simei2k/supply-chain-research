@@ -30,7 +30,8 @@ assert not unknown, f"map points to unknown events: {unknown}"
 rows = []
 def add(pool, df, name, year, link=None, match=None):
     for _, r in df.iterrows():
-        rows.append(dict(pool=pool, name=str(r[name]), match=str(r[match or name]),
+        hint = re.match(r"\[([EH]\d{3})\]", str(r.get("Coding notes", "")))  # Stage 4B rows carry their event id
+        rows.append(dict(pool=pool, name=str(r[name]), match=str(r[match or name]), hint=hint.group(1) if hint else "",
                          year=str(r[year])[:4] if year else "", link=str(r[link]) if link and pd.notna(r[link]) else ""))
 
 add("coded", pd.read_csv(os.path.join(D, "coded.csv")), "Incident", "Year", "Primary source")
@@ -48,6 +49,8 @@ add("vcdb", pd.read_csv(os.path.join(C, "vcdb_partner.csv")), "victim", "year", 
 
 pool_rows = pd.DataFrame(rows)
 def assign(r):
+    if r.hint:
+        return r.hint
     m = emap[(emap.pool == r.pool) & emap.match.map(lambda k: r.match.startswith(k))]
     if m.empty:
         sys.exit(f"UNMAPPED {r.pool}: {r.name}")

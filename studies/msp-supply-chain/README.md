@@ -53,7 +53,7 @@
 | News searches (Stage 2) | Done 2026-11-24: 40 queries, 65 candidates in `data/candidates/news_candidates.csv` |
 | Dedupe (Stage 3) | Done 2026-11-24; as of 2026-11-25: 811 events; 184 counted (all coded), 499 to verify, 46 exploited with no downstream reach, 82 logged |
 | Full coding (Stage 4B) | Done 2026-11-25: 184 counted incidents coded in `data/coded.csv` (63 MSP-specific or MSP-relevant, 121 General). 499 HHS and other events remain "To verify" and are not part of the counted set |
-| Second coder | Done 2026-11-26: MSP sample (13): trust boundary 0.78, tier 0.70, relevance 0.34 (`data/coder2.csv`). General sample (24): trust boundary 0.93, tier 0.50 before decision 17 (software-supply agreement 36%), 24 of 24 after a rule-guided re-check; reach 0.56; relevance degenerate (`data/coder2_general.csv`) |
+| Second coder | Done 2026-11-26: MSP sample (13): trust boundary 0.78, tier 0.70, relevance 0.34 (`data/coder2.csv`). General sample (24): trust boundary 0.93, tier 0.50 before decision 17 (software-supply agreement 36%), 24 of 24 after a rule-guided re-check; reach 0.56; relevance degenerate (`data/coder2_general.csv`). Relevance re-check under the written rule: 37 of 37 agree (`data/relevance_recheck.csv`) |
 | Signals (Stage 5) | Provisional 2026-11-25 in `signals.md`: MSP subset S1, S2, S3 strong, S4 not met |
 | Telemetry visibility | Done internally (see `telemetry/README.md`) |
 

@@ -44,8 +44,10 @@ Every excluded case goes to `data/logged.csv` with its reason and rule.
 | `data/dedupe/` | Hand dedupe decisions: `events.csv` (one row per event), `event_map.csv` (pool row to event) and `hhs_relevance.csv` (relevance review of HHS vendors) |
 | `data/coded.csv` | Counted incidents, coded |
 | `data/coder2.csv` | Blind second-coder rows for the reliability sample (same columns as `coded.csv`) |
+| `data/relevance_recheck.csv` | Blind relevance-only re-check of the 37 sampled incidents under the written rule |
 | `data/logged.csv` | Excluded cases, with reasons |
 | `signals.md` | Stage 5 signals and reliability results (`scripts/signals.py`) |
+| `findings.md` | Plain-language write-up of the results, limits and pre-publication checks |
 | `data/hhs_ba_matches.csv` | Hand matches of HHS covered-entity rows to their business associate, with source |
 | `scripts/` | KEV filters and any collection or dedupe scripts |
 | `telemetry/README.md` | Plain-language note only; no internal data |

@@ -67,6 +67,8 @@ Columns of `data/coded.csv`, in order. Values: `Y` yes, `N` no (only when a sour
 | 3 Software deployment | Deploy software, create or modify accounts |
 | 4 Security controls | Change security settings, disable protection, alter backup |
 
+**Tier rule for software-supply delivery (2026-11-26):** when malicious code reaches customers' endpoints through the supplier's own package, update, installer or release channel, the capability reported is tier 3 (Software deployment). Tier 2 applies when an attacker runs commands through a provider's access (hosting ransomware, remote tools). Platform incidents where only the customers' secrets were stolen (e.g. CircleCI) stay tier 1.
+
 **Priority cell:** tier 3 or 4 with reach of Dozens or Hundreds or more.
 
 ## Behaviours mapped to MITRE ATT&CK

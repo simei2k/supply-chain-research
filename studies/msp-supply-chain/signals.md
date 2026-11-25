@@ -1,6 +1,6 @@
 # Signals (Stage 5)
 
-Computed 2026-11-25 by `scripts/signals.py` from `data/coded.csv` (184 counted incidents, all coded) and `data/candidates.csv`. Recompute after committing and note the commit here. **Provisional:** the second-coder check below covers the MSP subset only; the General incidents (121) have not been double-coded.
+Computed 2026-11-25 by `scripts/signals.py` from `data/coded.csv` (184 counted incidents, all coded) and `data/candidates.csv`. Recompute after committing and note the commit here. Second-coder checks cover both samples (see Reliability). The tier rule in README decision 17 was applied after the General check.
 
 # Scope A: main ranking
 
@@ -76,7 +76,7 @@ S4: not met (0 behaviours at 60%+: none; threshold three or four)
 | Trust boundary | Incidents | Priority cell |
 | --- | --- | --- |
 | Service provider holding customer data | 90 | 8 |
-| Plugin, extension or package | 31 | 2 |
+| Plugin, extension or package | 31 | 4 |
 | API credential or token | 13 | 2 |
 | Software update mechanism | 13 | 1 |
 | RMM or management platform | 11 | 2 |
@@ -91,9 +91,9 @@ S1: strong (top four: Service provider holding customer data 90, Plugin, extensi
 
 ### S2 Prevalence x impact
 
-- Priority-cell incidents (tier 3-4, reach Dozens or more): 20 of 184
-- Share held by the top 2 boundaries by prevalence: 50%
-- Share held by the top 3 boundaries by prevalence: 60%
+- Priority-cell incidents (tier 3-4, reach Dozens or more): 22 of 184
+- Share held by the top 2 boundaries by prevalence: 55%
+- Share held by the top 3 boundaries by prevalence: 64%
 
 S2: strong (threshold 50%)
 
@@ -106,37 +106,38 @@ S3: strong on Unknown alone; not met counting both (threshold 40% or less)
 
 ### S4 Behaviour convergence
 
-- Priority-cell incidents reporting any behaviour: 19 of 20
+- Priority-cell incidents reporting any behaviour: 20 of 22
 
 | Behaviour | Share of those incidents |
 | --- | --- |
-| Software deployment | 58% |
-| Credential access | 58% |
-| Exfiltration | 47% |
-| Shell/PowerShell | 37% |
-| Lateral movement (beh.) | 37% |
-| Ransomware | 37% |
-| Remote command | 32% |
-| Security-tool interference | 26% |
-| Services/tasks | 21% |
-| Backup disruption | 16% |
-| Archive creation | 11% |
+| Credential access | 60% |
+| Software deployment | 55% |
+| Exfiltration | 50% |
+| Shell/PowerShell | 40% |
+| Lateral movement (beh.) | 35% |
+| Ransomware | 35% |
+| Remote command | 30% |
+| Security-tool interference | 25% |
+| Services/tasks | 20% |
+| Backup disruption | 15% |
+| Archive creation | 10% |
 
-S4: not met (0 behaviours at 60%+: none; threshold three or four)
+S4: not met (1 behaviours at 60%+: Credential access; threshold three or four)
 
 
 ## Reading
 
 **Main ranking (MSP-specific + MSP-relevant, 63 incidents)**
-- S1 passes (top four boundaries: 26, 10, 6, 5), but narrowly and for a judgement reason: API credential or token reaches 6 only because three platform or cloud-hosting providers (Heroku, Vercel, Railway) were coded MSP-specific under the tightened relevance definition. Coded General, API credential or token would have 3 and S1 would fail on the fourth boundary (software update mechanism, 4).
+- S1 passes (top four boundaries: 26, 10, 6, 5), but narrowly: API credential or token reaches 6 only because three platform or cloud-hosting providers (Heroku, Vercel, Railway) were coded MSP-specific under the tightened relevance definition. Coded General, that boundary would have 3 and S1 would fail on the fourth boundary (software update mechanism, 4).
 - S2 passes: the top two boundaries (service provider holding customer data; RMM or management platform) hold 8 of the 14 priority-cell incidents (57%); the top three hold 64%.
 - S3 passes: 2% of the MSP subset has reach Unknown; 38% have more than one organisation confirmed but no count.
-- S4 fails: no behaviour reaches 60% of priority-cell incidents (credential access is highest at 57%). The preset test is across all priority-cell incidents; convergence within a single boundary would be exploratory only.
+- S4 fails: no behaviour reaches 60% of priority-cell incidents (credential access is highest at 57%).
+- The tier rule (decision 17) did not change any MSP-subset result: the recoded rows are package and build incidents, which sit in the General set.
 
 **Context ranking (all 184 counted incidents)**
-- Service provider holding customer data dominates (90 of 184; 25 of these are HHS-reported vendors confirmed by a vendor, client or state AG source). Plugin, extension or package (31) is the next largest, almost all open-source package maintainer takeovers.
+- Service provider holding customer data dominates (90 of 184; 25 are HHS-reported vendors confirmed by a vendor, client or state AG source). Plugin, extension or package (31) is next, almost all open-source package maintainer takeovers.
+- After decision 17 the priority cell grows from 20 to 22 incidents; credential access reaches 60% (S4 still not met: one behaviour, needs three or four).
 - S3 on all incidents: 12% Unknown, but 48% Unknown or Unknown (more than one) because package incidents report downloads, not organisations.
-- Known limit: all-incident reach is weakly coded for open-source packages, where downloads are not organisations.
 
 ## Reliability (second coder, MSP subset)
 
@@ -150,3 +151,22 @@ Blind recode of a seeded random 20% (13 of 61, `random_state=20261125`) by a cod
 | Relevance | 62% | 0.34 |
 
 Target (0.7 on trust boundary and tier) met. Relevance is weak: the second coder put Atento, Cisco Duo and AOMEI in General supply-chain and N-able, Ingram Micro one step the other way, so the MSP-subset membership itself is the least reliable judgement. Adjudicated by rule: Bomgar tier 4->3, JumpCloud boundary to RMM, Atento tier NR->2. Then: relevance definition tightened (README decision 16) and Atento, Verkada, Okta/Sitel, SimpleHelp utility provider recoded; Mimecast boundary set to Cloud integration. Kept: Cisco Duo reach Hundreds or more (Cisco's own ~1% statement), Inline tier 1 (ransomware label seen only in a search snippet). Kappa above is before any of these changes.
+
+## Reliability (second coder, General set)
+
+Blind recode of a seeded random 20% of the 121 General incidents (24, `random_state=20261126`) in `data/coder2_general.csv`, same brief as the MSP sample (coder chose relevance and boundary itself). Cohen's kappa before any adjudication:
+
+| Field | Agreement | Kappa |
+| --- | --- | --- |
+| Trust boundary | 96% | 0.93 |
+| Capability tier | 67% | **0.50** (target 0.7 not met) |
+| Reach band | 71% | 0.56 |
+| Relevance | 58% | 0.00 (degenerate: first coder is General on all 24) |
+
+Pooled with the MSP sample (n = 37): trust boundary 0.96, tier 0.65, reach band 0.66.
+
+**Where tier disagrees.** Provider-held-data incidents (13): 92% agreement. Software-supply incidents (package, build pipeline, update mechanism; 11): 36% agreement. The disagreement is one question: when a malicious package, update or installer runs on customer machines, is that "2 Endpoint action" (commands executed) or "3 Software deployment" (the supplier channel deployed code)? Cases: Rspack, Shai-Hulud, ctx, Ultralytics, lottie-player, 3CX, Comm100, Accellion. The codebook does not settle it, so coders (including the first coder across waves) were inconsistent.
+
+**Relevance.** Five health-data vendors (Elgon, ApolloMD, Aesto, ION, CareCloud) plus Oracle Health, MOVEit and HealthEC were coded MSP-specific by the second coder; the first coder had General. These sit on the edge of "IT outsourcer or hosting provider" in the tightened definition.
+
+**Outcome (2026-11-26).** Tier rule adopted as README decision 17 (software-supply delivery = tier 3) and 21 rows recoded. Tier kappa on the General sample was computed before the rule; the blind coders have not re-coded under it. A re-check of the 8 disagreeing rows under the rule is the open follow-up.

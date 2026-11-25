@@ -1,7 +1,7 @@
 event_id,incident,year,relevance,trust_boundary,status,rule,note
 E001,Kaseya VSA REvil attack,2021,MSP-specific,RMM or management platform,Counted (first pass),,
 E002,SimpleHelp RMM exploited by DragonForce via an MSP,2025,MSP-specific,Remote-access tool,Counted (first pass),,KEV SimpleHelp 2025 CVE chain also used in E003
-E003,SimpleHelp RMM exploited at a utility billing software provider (CISA AA25-163A),2025,MSP-specific,Remote-access tool,Counted (first pass),,"Same CVEs as E002 but a separate victim with its own downstream customers (one CVE, several incidents)"
+E003,SimpleHelp RMM exploited at a utility billing software provider (CISA AA25-163A),2025,MSP-relevant,Remote-access tool,Counted (first pass),,"Same CVEs as E002 but a separate victim with its own downstream customers (one CVE, several incidents); Relevance -> MSP-relevant (tightened definition)"
 E004,SimpleHelp auth bypass used to deliver new malware families,2026,MSP-relevant,Remote-access tool,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported",Stage 4A: Blackpoint intrusion via one internet-facing SimpleHelp server; owner and customer reach not reported
 E005,SCKit / RMM+ extension: rogue ScreenConnect clients pushed from compromised MSP instances,2026,MSP-specific,"Plugin, extension or package",Counted (first pass),,Huntress: 288 endpoints in 48 orgs (11 Nov) plus 205 endpoints in 41 orgs (13 Nov); '6 MSPs' from BleepingComputer. Merges SCKit and the RMM+ November campaign
 E006,Rogue modified ScreenConnect clients spreading VBScript (September wave),2026,MSP-specific,Remote-access tool,Logged,Not a supplier compromise,Stage 4A: rogue clients installed via social engineering (Huntress); no supplier or MSP involved
@@ -19,7 +19,7 @@ E018,Rackspace claimed on leak site,2025,MSP-specific,Service provider holding c
 E019,CloudNordic / AzeroCloud hosting ransomware,2023,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E020,Tietoevry data centre ransomware,2024,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E021,Retailers breached via IT service provider help desk (social engineering),2025,MSP-specific,Vendor or developer account,Logged,Only one customer affected,Stage 4B: only M&S ties entry to a third party; Co-op names no provider; TCS denies (decided 2026-11-25)
-E022,Okta breach via support contractor (Lapsus$),2022,MSP-specific,Identity provider,Counted (first pass),,
+E022,Okta breach via support contractor (Lapsus$),2022,MSP-relevant,Identity provider,Counted (first pass),,Relevance -> MSP-relevant (tightened definition)
 E023,Help-desk refund scams using legitimate RMM tools (CISA AA23-025A),2023,MSP-relevant,Remote-access tool,Logged,Not a supplier compromise,Attacker-installed RMM; no supplier compromised
 E024,Ingram Micro ransomware,2025,MSP-relevant,Service provider holding customer data,Counted (first pass),,Stage 4A: company statement confirms ordering/licensing platforms down for customers (service outage); customer data exposure not confirmed
 E025,Okta customer support system breach,2023,MSP-relevant,Identity provider,Counted (first pass),,
@@ -31,7 +31,7 @@ E030,tj-actions/changed-files and reviewdog GitHub Actions,2025,General supply-c
 E031,Salesloft Drift OAuth token theft,2025,General supply-chain,API credential or token,Counted (first pass),,Includes TransUnion and other downstream victims
 E032,Gainsight connected-app tokens (Salesforce),2025,General supply-chain,API credential or token,Counted (first pass),,
 E033,MOVEit Transfer mass exploitation (Cl0p),2023,General supply-chain,Service provider holding customer data,Counted (first pass),,"One campaign; HHS business associates breached through it (IBM, Maximus, Welltok, TMG Health, Wisconsin Physicians Service and unnamed vendors) are merged here. Decide whether each provider becomes its own incident"
-E034,Cleo file transfer exploitation,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,Campaign like E033
+E034,Cleo file transfer exploitation,2024,General supply-chain,Service provider holding customer data,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported","Campaign like E033; Stage 4B General: A KEV flaw (CVE-2024-50623/55956) was exploited on customers' own Cleo servers. No Cleo-side compromise, and no provider whose Cleo breach exposed several customers, was found in primary sources. Vict"
 E035,XZ Utils backdoor,2024,General supply-chain,"Plugin, extension or package",Counted (first pass),,Caught before wide use
 E036,Polyfill.io CDN script takeover,2024,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E037,Nx 's1ngularity' npm compromise,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,
@@ -40,14 +40,14 @@ E039,Shai-Hulud npm worm,2025,General supply-chain,"Plugin, extension or package
 E040,Shai-Hulud 2.0,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,May merge with E039
 E041,GlassWorm OpenVSX extensions,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E042,Axios npm maintainer account hijack,2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,
-E043,Bitwarden CLI npm release,2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,
+E043,Bitwarden CLI npm release,2026,MSP-relevant,"Plugin, extension or package",Counted (first pass),,
 E044,SAP npm packages (TeamPCP),2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,May be part of E047
 E045,Notepad++ update mechanism hijacked,2025,General supply-chain,Software update mechanism,Counted (first pass),,
 E046,Daemon Tools Lite trojanized installer,2026,General supply-chain,Software update mechanism,Counted (first pass),,
 E047,"TeamPCP campaign: Trivy, Checkmarx KICS and LiteLLM compromised",2026,General supply-chain,Build or release pipeline,Counted (first pass),,"Merges Trivy (KEV), TeamPCP (Sheet) and LiteLLM (news); European Commission AWS breach is downstream"
-E048,Mimecast certificate compromise (M365 connections),2021,MSP-relevant,Backup or security-management platform,Counted (first pass),,
+E048,Mimecast certificate compromise (M365 connections),2021,MSP-relevant,Cloud integration,Counted (first pass),,
 E049,ClickStudios Passwordstate update hijack,2021,MSP-relevant,Software update mechanism,Counted (first pass),,
-E050,Heroku and Travis CI OAuth token theft,2022,General supply-chain,API credential or token,Counted (first pass),,
+E050,Heroku and Travis CI OAuth token theft,2022,MSP-specific,API credential or token,Counted (first pass),,
 E051,Comm100 trojanized installer,2022,General supply-chain,Software update mechanism,Counted (first pass),,
 E052,ConnectWise Cloud Backup (SkyKick) app credential used to sign in to M365 tenants,2026,MSP-specific,Backup or security-management platform,Counted (first pass),,Reach: 162 tenants confirmed by Huntress
 E053,MSP Process Partner Center integrations breached; tokens used in client Entra tenants,2026,MSP-specific,Cloud integration,Counted (first pass),,
@@ -57,8 +57,8 @@ E056,"JPMorgan Chase, Visa, Mastercard vendors hacked (N0n)",2026,General supply
 E057,Qubole vendor credentials used via trusted AWS roles into customer accounts,2026,General supply-chain,Cloud integration,Counted (first pass),,Over a dozen organisations
 E058,TriZetto Provider Solutions client web portal accessed,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E059,Conduent Business Services ransomware,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,CLAUDE.md names Conduent as a counted example
-E060,Unlimited Technology Systems practice management software breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E061,Veradigm vendor's API credentials stolen,2025,General supply-chain,API credential or token,Counted (first pass),,
+E060,Unlimited Technology Systems practice management software breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2026 (first disclosure)
+E061,Veradigm vendor's API credentials stolen,2026,General supply-chain,API credential or token,Counted (first pass),,Stage 4B: year 2026 (first disclosure)
 E062,Ribbon Communications breached by nation-state,2025,General supply-chain,Vendor or developer account,To verify,,Check reach into customers
 E063,MainStreet Bancshares core-bank vendor compromised,2025,General supply-chain,Service provider holding customer data,To verify,,
 E064,F5 source code and vulnerability data stolen,2025,General supply-chain,Vendor or developer account,To verify,,Vendor compromise; customer reach not shown
@@ -66,9 +66,9 @@ E065,Oracle E-Business Suite zero-day mass data theft,2025,General supply-chain,
 E066,TanStack package compromise,2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E067,Megalodon CI/CD intrusion campaign,2026,General supply-chain,Build or release pipeline,Counted (first pass),,
 E068,CPUID download site served trojanized CPU-Z and HWMonitor,2026,General supply-chain,Software update mechanism,Counted (first pass),,
-E069,Signed adware tool deployed payloads that disabled antivirus,2026,General supply-chain,Software update mechanism,Counted (first pass),,Tier 4 candidate
+E069,Signed adware tool deployed payloads that disabled antivirus,2026,General supply-chain,Software update mechanism,Logged,No primary source,Tier 4 candidate; Stage 4B General: Dragon Boss Solutions is an adware/PUP vendor whose own signed updater pushed AV-killing payloads. No legitimate supplier was compromised; it is malicious-by-design software. The unregistered update domains were sinkhole
 E070,AppsFlyer Web SDK hijacked to inject crypto-stealing JavaScript,2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,
-E071,Popular VS Code extensions exfiltrating developer data,2026,General supply-chain,"Plugin, extension or package",Counted (first pass),,
+E071,Popular VS Code extensions exfiltrating developer data,2026,General supply-chain,"Plugin, extension or package",Logged,No primary source,"Stage 4B General: Koi's MaliciousCorgi report shows two AI extensions, 'ChatGPT - 中文版' (WhenSunset) and 'ChatMoss' (zhukunpeng), that were malicious under their own publishers. No legitimate publisher was taken over or compromised, so thi"
 E072,Telus Digital breach (ShinyHunters),2026,General supply-chain,Service provider holding customer data,To verify,,
 E073,Retool spear phishing (cloud customers' accounts),2023,General supply-chain,Vendor or developer account,Counted (first pass),,
 E074,Okta source code theft,2022,MSP-relevant,Vendor or developer account,Logged,"Vendor breach, no customer reach reported",Stage 4A: Okta reports no customer impact
@@ -76,9 +76,9 @@ E075,Auth0 source code theft,2022,General supply-chain,Vendor or developer accou
 E076,Dropbox GitHub compromise,2022,General supply-chain,Vendor or developer account,To verify,,Customer reach not shown
 E077,Legitimate update mechanism abused to deliver wiper (Agrius 'Fantasy'),2022,General supply-chain,Software update mechanism,Counted (first pass),,
 E078,Docker Hub malicious containers,2022,General supply-chain,"Plugin, extension or package",Logged,No supplier compromised,Attacker-published images
-E079,WordPress theme publisher AccessPress compromised,2021,General supply-chain,"Plugin, extension or package",Counted (first pass),,
-E080,PHP self-hosted git server compromise,2021,General supply-chain,Build or release pipeline,Counted (first pass),,
-E081,Fake Dependabot commits,2023,General supply-chain,Build or release pipeline,Counted (first pass),,
+E079,WordPress theme publisher AccessPress compromised,2022,General supply-chain,"Plugin, extension or package",Counted (first pass),,Stage 4B: year 2022 (first disclosure)
+E080,PHP self-hosted git server compromise,2021,General supply-chain,Build or release pipeline,Logged,No downstream reach to customers,"Stage 4B General: In March 2021 two malicious commits were pushed to php-src through the compromised git.php.net server. They were caught and reverted, and no release or downstream user is reported as affected, so noth"
+E081,Fake Dependabot commits,2023,General supply-chain,Build or release pipeline,Logged,Customer credential abuse on a platform,Stage 4B General: Each victim's own stolen GitHub personal access token was used to push commits disguised as Dependabot. Neither GitHub nor Dependabot was compromised. This is customer credential abuse without supplie
 E082,3proxy signing incident,2024,General supply-chain,Vendor or developer account,To verify,,
 E083,Malware disguised as installer targeting Korean public institution,2024,General supply-chain,Software update mechanism,To verify,,
 E084,Ultralytics (GitHub Actions to PyPI),2024,General supply-chain,Build or release pipeline,Counted (first pass),,
@@ -91,12 +91,12 @@ E090,crates.io phishing (rustfoundation.dev),2025,General supply-chain,"Plugin, 
 E091,React Native ARIA and gluestack-ui,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E092,lottie-player compromise,2024,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E093,rand-user-agent (npm) compromise,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,
-E094,DogWifTool trojanized release,2025,General supply-chain,Software update mechanism,Counted (first pass),,
+E094,DogWifTool trojanized release,2025,General supply-chain,Software update mechanism,Logged,No primary source,"Stage 4B General: No primary source could be checked. The vendor's Discord statement (GitHub token pulled from reverse-engineered builds, trojanised v1.6.3-1.6.6) is known only through news and blog coverage, and no investigator report or"
 E095,POLONIUM uses IT company credentials against downstream customers,2022,MSP-specific,API credential or token,Counted (first pass),,
 E096,NullSoft Stocks,2021,General supply-chain,Software update mechanism,To verify,,Breaking Trust row; check what was compromised
 E097,MonPass CA client backdoored,2021,General supply-chain,Software update mechanism,Counted (first pass),,
 E098,Myanmar Presidential Office website served trojanized downloads,2021,General supply-chain,Software update mechanism,To verify,,
-E099,SushiSwap MISO repository compromised by contractor,2021,General supply-chain,Build or release pipeline,Counted (first pass),,
+E099,SushiSwap MISO repository compromised by contractor,2021,General supply-chain,Build or release pipeline,Logged,Only one customer affected,"Stage 4B General: Only one customer was affected: a contractor's malicious front-end code redirected one auction's funds (JayPegs, 865 ETH, later returned). The only primary source is an unsigned postmortem; the CTO's "
 E100,UAParser.js compromise,2021,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E101,coa and rc npm compromise,2021,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E102,colors.js / faker.js maintainer sabotage,2022,General supply-chain,"Plugin, extension or package",Counted (first pass),,
@@ -108,14 +108,14 @@ E107,JuiceLedger phishing of PyPI maintainers,2022,General supply-chain,"Plugin,
 E108,Fishpig Magento extension distribution compromised,2022,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E109,dYdX npm package compromise,2022,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E110,SocGholish via compromised media company's JavaScript,2022,General supply-chain,"Plugin, extension or package",To verify,,
-E111,PyTorch nightly torchtriton dependency confusion,2023,General supply-chain,"Plugin, extension or package",Counted (first pass),,
+E111,PyTorch nightly torchtriton dependency confusion,2023,General supply-chain,"Plugin, extension or package",Logged,"Attacker-published package, no supplier compromise","Stage 4B General: Dependency confusion. An attacker registered the unclaimed name 'torchtriton' on PyPI, and pip chose it over PyTorch's own index. No PyTorch account or infrastructure was taken over. Disclosed 31 Dec "
 E112,Evasive Panda MsgBot update hijack (Tencent QQ),2023,General supply-chain,Software update mechanism,Counted (first pass),,
 E113,MSI breach and code-signing key leak,2023,General supply-chain,Vendor or developer account,To verify,,Customer reach not shown
 E114,SpinOk SDK in Android apps,2023,General supply-chain,"Plugin, extension or package",To verify,,Covers both Breaking Trust SpinOk rows
 E115,PyPI maintainer password theft,2023,General supply-chain,"Plugin, extension or package",To verify,,
 E116,Ghostly S3 bucket takeover of npm binary (bignum),2023,General supply-chain,"Plugin, extension or package",Counted (first pass),,
 E120,Accellion FTA zero-day campaign,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,Campaign like E033; Health Net via HHS merged
-E121,Battelle for Kids ransomware,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E121,Battelle for Kids ransomware,2022,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2022 (first disclosure)
 E122,CaptureRx ransomware,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E123,Commport Communications (Canada Post supplier) breach,2021,General supply-chain,Service provider holding customer data,To verify,,May be single customer
 E124,MCG Health breach,2022,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -126,28 +126,28 @@ E128,Red Cross data stolen from unnamed contractor,2022,General supply-chain,Ser
 E129,General Informatics (IT provider) network compromised,2023,MSP-specific,Service provider holding customer data,Logged,No primary source,"Stage 4A: St. George Fire District lawsuit (filed 2026) alleges shared remote-access credentials led to 2+ client breaches; untested allegations; Stage 4B verify: Only news of untested lawsuit allegations (St. George Fire District, 2026)"
 E130,Blue Yonder ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E131,Epic Systems (University of Kansas class action),2024,General supply-chain,Service provider holding customer data,To verify,,
-E132,Kelly Benefits breach,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E132,Kelly Benefits breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2025 (first disclosure)
 E133,Softway Medical Group breach (French hospital data),2024,General supply-chain,Service provider holding customer data,To verify,,
 E134,Nokia third-party breach,2024,General supply-chain,Service provider holding customer data,To verify,,Single customer?
 E135,STIIIZY third-party partner breach,2024,General supply-chain,Service provider holding customer data,To verify,,Single customer?
 E136,Salesforce vishing data-theft campaign (ShinyHunters / UNC6040),2025,General supply-chain,Service provider holding customer data,Logged,Customer credential abuse on a platform,Each customer's own staff vished; Salesforce not compromised (as Snowflake)
 E137,Oracle Health (Cerner) legacy server breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E138,DataPost ransomware (Singapore data handling provider),2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E138,DataPost ransomware (Singapore data handling provider),2025,General supply-chain,Service provider holding customer data,Logged,Only one customer affected,"Stage 4B General: Only one customer is confirmed affected: Income Insurance, with at least 146 policyholders. DataPost has not said whether other clients were hit, and no PDPC decision has been found."
 E139,DermCare Management breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E140,Intradev / APCS software attack,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E140,Intradev / APCS software attack,2025,General supply-chain,Service provider holding customer data,Logged,No primary source,"Stage 4B General: No primary source found: APCS customer emails, Intradev comment and ICO confirmation are known only via The Register/news; no public provider notice, regulator statement or IR report located."
 E141,Miljödata HR software supplier ransomware,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E142,Ocuco eye care software breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E143,SK shieldus breach,2025,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: data on ~120 client companies reported by Korean press; no regulator finding yet; Stage 4B verify: PIPC release 23 Oct 2025 confirms client-company staff data leaked
 E144,Toppan Next Tech print vendor breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E145,Clinical Registry Solutions breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E145,Clinical Registry Solutions breach,2026,General supply-chain,Service provider holding customer data,Logged,Only one customer affected,"Stage 4B General: Only one client is confirmed affected: Dignity Health St. Mary's Medical Center, 8,545 patients in HHS OCR and AG notices. No second customer is named. Akira's claim comes from the attackers."
 E146,RXNT breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E147,CompuCom MSP DarkSide ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: ODP Corp SEC filing confirms customer service delivery disrupted until late March 2021
 E148,Microsoft Entra Connect Health flaw exploited to pull tenant data,2026,MSP-relevant,Identity provider,Logged,No primary source,Stage 4A: no advisory found; may be confused with the MSP Process incident (Nov 2026); Stage 4B verify: Microsoft Azure Service Health notice seen only as quotes in news/Reddit; recheck if notice text obtained
 E149,Brevo stolen Cloudflare API key used to inject scripts into customer sites,2026,General supply-chain,API credential or token,Counted (first pass),,
 E150,CEVA Logistics breach exposes multiple retailers' customer data,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E151,Cisco Duo telephony (SMS) provider breach,2024,MSP-relevant,Service provider holding customer data,Counted (first pass),,Stage 4B: disclosed April 2024
-E152,Railway platform breach exposed linked-account tokens,2025,General supply-chain,API credential or token,Counted (first pass),,
-E153,MCBS medical billing breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E152,Railway platform breach exposed linked-account tokens,2026,MSP-specific,API credential or token,Counted (first pass),,Stage 4B: year 2026 (first disclosure)
+E153,MCBS medical billing breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2026 (first disclosure)
 E154,Aesto Health records-migration SaaS breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E155,CareCloud healthcare IT breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E156,Perry Johnson & Associates (PJ&A) transcription breach,2023,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -178,12 +178,12 @@ E180,Cloudstar hosting ransomware,2021,MSP-specific,Service provider holding cus
 E181,FirstVDS hosting breach,2026,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4A: VMmanager 6 flaw used to mount customer disks and steal credentials; date 2026-10
 E182,Swiss Cloud hosting ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E183,AOMEI update channel hijacked,2026,MSP-relevant,Software update mechanism,Counted (first pass),,
-E184,Dahua SmartPSS installer distributed with malware,2021,General supply-chain,Software update mechanism,Counted (first pass),,
+E184,Dahua SmartPSS installer distributed with malware,2021,General supply-chain,Software update mechanism,Logged,Only one customer affected,Stage 4B General: Single confirmed victim (decision 13): An unnamed CCTV vendor's website served a trojanized Dahua SmartPSS installer to its customers (18 May-8 Jun 2021). Mandiant investigated and confirmed the intru
 E185,Genesys breach of customer data,2026,General supply-chain,Service provider holding customer data,To verify,,
 E186,OpsShield cPGuard malicious updates,2026,MSP-relevant,Software update mechanism,Counted (first pass),,
 E187,"Fireworks AI breach (Cursor, Uber, Notion)",2026,General supply-chain,API credential or token,Counted (first pass),,
 E188,Wealthsimple breach via supply chain attack,2025,General supply-chain,"Plugin, extension or package",To verify,,Identify supplier
-E189,Infosys McCamish Systems ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E189,Infosys McCamish Systems ransomware,2023,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2023 (first disclosure)
 E190,Anodot analytics platform tokens used against customers,2026,General supply-chain,API credential or token,Counted (first pass),,
 E191,AI inference providers breached; customer prompts and keys stolen,2026,General supply-chain,API credential or token,To verify,,
 E192,LockBit uses an MSP's ConnectWise RMM to deploy ransomware to customers,2023,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4B: eSentire disclosed Sept 2023; RMM was ScreenConnect
@@ -191,19 +191,19 @@ E193,Play ransomware campaign against MSPs,2023,MSP-specific,RMM or management p
 E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4B: AhnLab says clients shared the provider's cloud file servers; no RMM described
 E195,Nobelium campaign against cloud resellers and MSPs (delegated admin),2021,MSP-specific,Cloud integration,Counted (first pass),,
 E196,ShipMonk fulfilment provider breach (Metabase zero-day),2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E197,Context AI hack exposes Vercel customer credentials,2026,General supply-chain,API credential or token,Counted (first pass),,
+E197,Context AI hack exposes Vercel customer credentials,2026,MSP-specific,API credential or token,Counted (first pass),,
 E198,GoTo breach; customers' encrypted backups stolen,2023,MSP-relevant,Service provider holding customer data,Counted (first pass),,"Linked to LastPass 2022; Stage 4B: stolen data were GoTo product databases, not a backup product"
 E199,Cloud service provider for airports compromised (PA systems),2025,General supply-chain,Cloud integration,Counted (first pass),,
 E200,CDK Global ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E201,NetStandard (Kansas MSP) cloud services attack,2022,MSP-specific,Service provider holding customer data,Logged,No primary source,Stage 4B: only source is a NetStandard customer email reposted on Reddit; outage only (decided 2026-11-25)
 E202,Advanced (UK MSP) ransomware; NHS 111 disrupted,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E203,SITA passenger service system breach,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E204,Atento customer-service provider ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: SEC 6-K filings confirm client operations interrupted
+E204,Atento customer-service provider ransomware,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4A: SEC 6-K filings confirm client operations interrupted; Relevance -> General supply-chain (tightened definition)
 E205,eslint-config-prettier maintainer phishing,2025,General supply-chain,"Plugin, extension or package",Counted (first pass),,KEV 2026 entry
-E206,JAVS Viewer installer backdoored,2024,General supply-chain,Software update mechanism,Counted (first pass),,
+E206,JAVS Viewer installer backdoored,2024,General supply-chain,Software update mechanism,Logged,Only one customer affected,"Stage 4B General: Single confirmed victim (decision 13): JAVS's official download site served a backdoored JAVS Viewer 8.3.7 installer signed by another party, which reached a JAVS customer. Rapid7 investigated (CVE-20"
 E207,Snowflake customer instances (UNC5537),2024,General supply-chain,Cloud integration,Logged,Customer credential abuse on a platform,Already in logged.csv (P10)
 E208,Veeam Backup & Replication RCE used for ransomware,2024,MSP-relevant,Backup or security-management platform,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported",Stage 4A: Sophos cases are victims' own Veeam servers; pilot P12 to be moved out of coded.csv
-E209,Eye Care Leaders EHR breach,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,
+E209,Eye Care Leaders EHR breach,2022,General supply-chain,Service provider holding customer data,Counted (first pass),,Stage 4B: year 2022 (first disclosure)
 E210,Nationwide Recovery Service breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E211,Change Healthcare ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E212,OneTouchPoint ransomware,2022,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -220,7 +220,7 @@ E222,TDS (Outcomes) pharmacy software vendor's ScreenConnect instance abused to 
 E223,Jade Sleet backdoors at an Indian IT services provider,2026,MSP-specific,Vendor or developer account,Logged,"IT provider breached, no downstream reach reported",SentinelLABS; provider unnamed
 E224,TeamUpdraft breach; UpdraftCentral Cloud keys used to backdoor connected WordPress sites,2026,MSP-relevant,RMM or management platform,Counted (first pass),,Site count unconfirmed
 E225,Fujitsu ProjectWEB compromise (142 client organisations),2021,MSP-specific,Service provider holding customer data,Counted (first pass),,
-E226,Verkada support super-admin credentials used to access customer cameras,2021,MSP-relevant,RMM or management platform,Counted (first pass),,"Reach differs: 97 customers (Verkada) vs 150,000+ cameras (FTC)"
+E226,Verkada support super-admin credentials used to access customer cameras,2021,General supply-chain,RMM or management platform,Counted (first pass),,"Reach differs: 97 customers (Verkada) vs 150,000+ cameras (FTC); Relevance -> General supply-chain (tightened definition)"
 E227,PurpleHaze/ShadowPad intrusion into SentinelOne's IT services and logistics provider,2025,MSP-specific,Service provider holding customer data,Logged,"IT provider breached, no downstream reach reported",
 E228,RVTools installer trojanized with Bumblebee,2025,MSP-relevant,Build or release pipeline,Logged,"Attacker-published copy, no supplier compromise",Dell denies the official site served malware; lookalike sites confirmed; Stage 4B verify: Dell denies official site served malware; trojanised installers on lookalike sites
 E229,Backdoored ARTEX Docker image from an unofficial fork,2026,General supply-chain,"Plugin, extension or package",To verify,,"Unofficial fork, not the supplier; may be 'no supplier compromised'"

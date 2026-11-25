@@ -95,6 +95,17 @@ for j, (bak, g) in enumerate(known[known.event_id.isna()].groupby("bak", sort=Tr
                      status="Counted (first pass)" if multi else "To verify",
                      rule="" , note=f"HHS only: {len(g)} row(s); " + ("more than one customer shown in HHS" if multi else "multi-customer exposure not yet shown")))
     known.loc[g.index, "event_id"] = eid
+# Stage 4B verification results for auto HHS events (data/dedupe/hhs_status.csv: event_id, year, status, rule, note)
+st_path = os.path.join(D, "dedupe", "hhs_status.csv")
+if os.path.exists(st_path):
+    hst = pd.read_csv(st_path, dtype=str).fillna("").set_index("event_id")
+    for a in auto:
+        if a["event_id"] in hst.index:
+            r = hst.loc[a["event_id"]]
+            if r.year: a["year"] = r.year
+            if r.status: a["status"] = r.status
+            a["rule"] = r.rule
+            a["note"] += "; Stage 4B: " + r.note
 # relevance review of HHS vendors (data/dedupe/hhs_relevance.csv)
 rel_path = os.path.join(D, "dedupe", "hhs_relevance.csv")
 hrel = pd.read_csv(rel_path) if os.path.exists(rel_path) else pd.DataFrame(columns=["match", "relevance", "basis"])

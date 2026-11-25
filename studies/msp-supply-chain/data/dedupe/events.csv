@@ -188,7 +188,7 @@ E190,Anodot analytics platform tokens used against customers,2026,General supply
 E191,AI inference providers breached; customer prompts and keys stolen,2026,General supply-chain,API credential or token,To verify,,
 E192,LockBit uses an MSP's ConnectWise RMM to deploy ransomware to customers,2023,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4B: eSentire disclosed Sept 2023; RMM was ScreenConnect
 E193,Play ransomware campaign against MSPs,2023,MSP-specific,RMM or management platform,To verify,,"Stage 4A: Adlumin IR report confirms Play used MSP RMM to reach customers but gives no count; earlier '1,000+ customers' figure was REvil/Kaseya, not Play"
-E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,RMM or management platform,Counted (first pass),,
+E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4B: AhnLab says clients shared the provider's cloud file servers; no RMM described
 E195,Nobelium campaign against cloud resellers and MSPs (delegated admin),2021,MSP-specific,Cloud integration,Counted (first pass),,
 E196,ShipMonk fulfilment provider breach (Metabase zero-day),2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E197,Context AI hack exposes Vercel customer credentials,2026,General supply-chain,API credential or token,Counted (first pass),,

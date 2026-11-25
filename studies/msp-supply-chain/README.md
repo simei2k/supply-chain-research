@@ -87,6 +87,8 @@ Exported from the coding Sheet as CSV into `data/candidates/`:
 
 17. Tier rule for software-supply delivery: malicious code delivered to customers' endpoints through the supplier's own package, update, installer or release channel is tier 3 (Software deployment). Adopted after the General second-coder check (tier kappa 0.50, software-supply agreement 36%); 21 rows recoded, then Accellion corrected to tier 2 after a blind re-check (2026-11-26).
 
+18. Relevance line for data-holding vendors: application and data SaaS vendors (EHR, billing, benefits, mailing, analytics, AI) are General even when they host many customers' data; MSP-specific is reserved for IT operations suppliers (MSPs, IT outsourcers, managed hosting, IaaS and PaaS, government shared IT). The rule matches the existing coding, so no rows changed. Heroku, Vercel and Railway stay MSP-specific as PaaS (2026-11-26).
+
 ## Files
 
 See `CLAUDE.md` for the file map, `codebook.md` for fields, `TASK.md` for the collection steps.

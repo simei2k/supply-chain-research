@@ -43,7 +43,9 @@ Every excluded case goes to `data/logged.csv` with its reason and rule.
 | `data/candidates.csv` | All pools, deduplicated: one row per supplier event with status (built by `scripts/build_candidates.py`) |
 | `data/dedupe/` | Hand dedupe decisions: `events.csv` (one row per event), `event_map.csv` (pool row to event) and `hhs_relevance.csv` (relevance review of HHS vendors) |
 | `data/coded.csv` | Counted incidents, coded |
+| `data/coder2.csv` | Blind second-coder rows for the reliability sample (same columns as `coded.csv`) |
 | `data/logged.csv` | Excluded cases, with reasons |
+| `signals.md` | Stage 5 signals and reliability results (`scripts/signals.py`) |
 | `data/hhs_ba_matches.csv` | Hand matches of HHS covered-entity rows to their business associate, with source |
 | `scripts/` | KEV filters and any collection or dedupe scripts |
 | `telemetry/README.md` | Plain-language note only; no internal data |

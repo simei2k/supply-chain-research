@@ -51,9 +51,9 @@
 | Pilot coding | 14 counted incidents in `data/coded.csv`; Snowflake moved to `data/logged.csv` |
 | Other pools (CNCF, MITRE, VCDB, HHS) | Pulled 2026-11-24 (Stage 1) |
 | News searches (Stage 2) | Done 2026-11-24: 40 queries, 65 candidates in `data/candidates/news_candidates.csv` |
-| Dedupe (Stage 3) | Done 2026-11-24: 780 events; 210 counted (first pass), 517 to verify, 43 exploited with no downstream reach, 10 logged |
-| Full coding | To do |
-| Second coder | To do |
+| Dedupe (Stage 3) | Done 2026-11-24; as of 2026-11-25: 811 events; 232 counted, 499 to verify, 45 exploited with no downstream reach, 35 logged |
+| Full coding (Stage 4B) | MSP subset done 2026-11-25: 61 counted MSP-specific or MSP-relevant incidents coded in `data/coded.csv` (pilot rows rechecked); General incidents to do |
+| Second coder | MSP subset done 2026-11-25: blind recode of 13 incidents (20%, seed 20261125) in `data/coder2.csv`. Kappa: trust boundary 0.78, tier 0.70 (target 0.7 met); relevance 0.34 (weak); reach band 0.79. General incidents to do |
 | Telemetry visibility | Done internally (see `telemetry/README.md`) |
 
 ## Sheet tabs (added 2026-11-24)
@@ -76,6 +76,11 @@ Exported from the coding Sheet as CSV into `data/candidates/`:
 9. Packages published by attackers (typosquats, dependency-confusion copycats, malicious uploads) are logged, not counted: no supplier was compromised. Maintainer-account takeovers and maintainer sabotage count (2026-11-24, to confirm).
 10. HHS vendor events count (first pass) only when HHS shows more than one customer; the rest are 'To verify' (2026-11-24, to confirm).
 11. The main trust-boundary ranking uses MSP-specific and MSP-relevant counted incidents; the all-incidents ranking (HHS included) is reported as context. HHS vendors that are counted or have IT-sounding names were reviewed for relevance (`data/dedupe/hhs_relevance.csv`); the rest default to General supply-chain (2026-11-24).
+
+12. Ransomware on a provider's shared hosting infrastructure is coded tier 2 (Endpoint action) when no attacker techniques are reported; the inference is stated in the coding note (2026-11-25).
+13. A multi-customer outage of a provider's hosted service counts as "services exposed" even without customer data exposure (Ingram Micro, Rackspace). A single customer reached through a provider path is logged, not counted (M&S/Co-op, Play/Adlumin) (2026-11-25).
+14. Year is the first public disclosure; events first disclosed in 2020 are logged as out of period even when 2021 notices followed (Netgain) (2026-11-25).
+15. Coding values: `N` only on an explicit statement; behaviours inferred from a CVE description or malware capability (not observed) are `NR`; "crossed customer boundary" is `Y` when data of more than one customer held by the provider was exposed (2026-11-25).
 
 ## Files
 

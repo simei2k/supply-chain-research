@@ -11,19 +11,19 @@ E009,BeyondTrust Remote Support SaaS API key compromise (US Treasury),2024,MSP-r
 E010,Bomgar / BeyondTrust RS exploited at an MSP and a dental software company (CVE-2026-1731),2026,MSP-specific,Remote-access tool,Counted (first pass),,"Huntress: 78 businesses isolated, 4 downstream customers exploited"
 E011,N-able N-central CVE-2026-18577 exploited to deploy ransomware to MSP customers,2026,MSP-specific,RMM or management platform,Counted (first pass),,Microsoft: China-linked actor 'likely' exploited CVE-2026-18577; The Hacker News reports attackers reached managed systems; N-able contacted affected customers. Confirm reach in Stage 4B
 E012,N-able N-central '4EverAble2Shell' zero-day and hosted N-central shutdown,2026,MSP-relevant,RMM or management platform,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported",Stage 4A: cryptominers on 21+ N-central servers; N-able: no evidence any customer environment reached
-E014,N-able Mail Assure / SpamExperts hosted cloud intrusion,2026,MSP-relevant,Backup or security-management platform,To verify,,Stage 4A: N-able confirms one hosted server accessed; no evidence of mailbox/data access; customer outage caused by N-able's precautionary shutdown. Counts only if a precautionary outage counts as affected services
+E014,N-able Mail Assure / SpamExperts hosted cloud intrusion,2026,MSP-relevant,Backup or security-management platform,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported","Stage 4A: N-able confirms one hosted server accessed; no evidence of mailbox/data access; customer outage caused by N-able's precautionary shutdown. Counts only if a precautionary outage counts as affected services; Stage 4B verify: N-able: one hosted server accessed, no evidence of customer data/mailbox access; outage was N-able takedown"
 E015,"Storm-1175 exploits ScreenConnect, SimpleHelp, BeyondTrust and others",2026,MSP-relevant,Remote-access tool,"Exploited, no downstream reach reported","KEV flaw exploited, no downstream reach reported",Stage 4A: Microsoft lists entry CVEs; no MSP or downstream reach
 E016,"Silk Typhoon uses stolen API keys from PAM, RMM and cloud providers",2025,MSP-specific,API credential or token,Counted (first pass),,
 E017,Rackspace hosted Exchange ransomware,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E018,Rackspace claimed on leak site,2025,MSP-specific,Service provider holding customer data,Logged,Secondary reporting alone,Stage 4A: Cl0p leak-site claim only; no Rackspace confirmation
 E019,CloudNordic / AzeroCloud hosting ransomware,2023,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E020,Tietoevry data centre ransomware,2024,MSP-specific,Service provider holding customer data,Counted (first pass),,
-E021,Retailers breached via IT service provider help desk (social engineering),2025,MSP-specific,Vendor or developer account,Counted (first pass),,
+E021,Retailers breached via IT service provider help desk (social engineering),2025,MSP-specific,Vendor or developer account,Logged,Only one customer affected,Stage 4B: only M&S ties entry to a third party; Co-op names no provider; TCS denies (decided 2026-11-25)
 E022,Okta breach via support contractor (Lapsus$),2022,MSP-specific,Identity provider,Counted (first pass),,
 E023,Help-desk refund scams using legitimate RMM tools (CISA AA23-025A),2023,MSP-relevant,Remote-access tool,Logged,Not a supplier compromise,Attacker-installed RMM; no supplier compromised
 E024,Ingram Micro ransomware,2025,MSP-relevant,Service provider holding customer data,Counted (first pass),,Stage 4A: company statement confirms ordering/licensing platforms down for customers (service outage); customer data exposure not confirmed
 E025,Okta customer support system breach,2023,MSP-relevant,Identity provider,Counted (first pass),,
-E026,JumpCloud commands framework abused by nation-state,2023,MSP-relevant,Identity provider,Counted (first pass),,Breaking Trust 'JumpCloud Chollima' is dated 2022-07-20; check it is this event
+E026,JumpCloud commands framework abused by nation-state,2023,MSP-relevant,RMM or management platform,Counted (first pass),,Breaking Trust 'JumpCloud Chollima' is dated 2022-07-20; check it is this event; Second coder: boundary changed to RMM
 E027,3CX DesktopApp trojanized build (via X_Trader),2023,General supply-chain,Build or release pipeline,Counted (first pass),,
 E028,Codecov Bash Uploader modified,2021,General supply-chain,Build or release pipeline,Counted (first pass),,
 E029,CircleCI secrets exposure,2023,General supply-chain,Build or release pipeline,Counted (first pass),,
@@ -123,7 +123,7 @@ E125,ParkMobile breached via third-party software flaw,2021,General supply-chain
 E126,SuperSoftTech databases sold,2021,General supply-chain,Service provider holding customer data,To verify,,
 E127,Carolina Behavioral Health Alliance third-party benefits administrator breach,2022,General supply-chain,Service provider holding customer data,To verify,,
 E128,Red Cross data stolen from unnamed contractor,2022,General supply-chain,Service provider holding customer data,To verify,,Single customer?
-E129,General Informatics (IT provider) network compromised,2023,MSP-specific,Service provider holding customer data,To verify,,Stage 4A: St. George Fire District lawsuit (filed 2026) alleges shared remote-access credentials led to 2+ client breaches; untested allegations
+E129,General Informatics (IT provider) network compromised,2023,MSP-specific,Service provider holding customer data,Logged,No primary source,"Stage 4A: St. George Fire District lawsuit (filed 2026) alleges shared remote-access credentials led to 2+ client breaches; untested allegations; Stage 4B verify: Only news of untested lawsuit allegations (St. George Fire District, 2026)"
 E130,Blue Yonder ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E131,Epic Systems (University of Kansas class action),2024,General supply-chain,Service provider holding customer data,To verify,,
 E132,Kelly Benefits breach,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -137,12 +137,12 @@ E139,DermCare Management breach,2025,General supply-chain,Service provider holdi
 E140,Intradev / APCS software attack,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E141,Miljödata HR software supplier ransomware,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E142,Ocuco eye care software breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E143,SK shieldus breach,2025,MSP-relevant,Service provider holding customer data,To verify,,Stage 4A: data on ~120 client companies reported by Korean press; no regulator finding yet
+E143,SK shieldus breach,2025,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: data on ~120 client companies reported by Korean press; no regulator finding yet; Stage 4B verify: PIPC release 23 Oct 2025 confirms client-company staff data leaked
 E144,Toppan Next Tech print vendor breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E145,Clinical Registry Solutions breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E146,RXNT breach,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E147,CompuCom MSP DarkSide ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: ODP Corp SEC filing confirms customer service delivery disrupted until late March 2021
-E148,Microsoft Entra Connect Health flaw exploited to pull tenant data,2026,MSP-relevant,Identity provider,To verify,,Stage 4A: no advisory found; may be confused with the MSP Process incident (Nov 2026)
+E148,Microsoft Entra Connect Health flaw exploited to pull tenant data,2026,MSP-relevant,Identity provider,Logged,No primary source,Stage 4A: no advisory found; may be confused with the MSP Process incident (Nov 2026); Stage 4B verify: Microsoft Azure Service Health notice seen only as quotes in news/Reddit; recheck if notice text obtained
 E149,Brevo stolen Cloudflare API key used to inject scripts into customer sites,2026,General supply-chain,API credential or token,Counted (first pass),,
 E150,CEVA Logistics breach exposes multiple retailers' customer data,2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E151,Cisco Duo telephony (SMS) provider breach,2024,MSP-relevant,Service provider holding customer data,Counted (first pass),,Stage 4B: disclosed April 2024
@@ -155,7 +155,7 @@ E157,HealthEC population health platform breach,2023,General supply-chain,Servic
 E158,ESO Solutions ransomware,2023,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E159,IDC Frontier (IDCF Cloud) ransomware,2026,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E160,Inetum ransomware,2021,MSP-specific,Service provider holding customer data,Logged,"IT provider breached, no downstream reach reported",Stage 4A: Inetum says no client infrastructure or delivery affected; incident Dec 2021
-E161,Netgain Technology hosting ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,"Attack Nov 2020, disclosed 2021"
+E161,Netgain Technology hosting ransomware,2021,MSP-specific,Service provider holding customer data,Logged,Out of period,"Attack Nov 2020, disclosed 2021; Stage 4B: Netgain ransomware first disclosed Dec 2020 (decided 2026-11-25)"
 E162,SoftServe ransomware,2020,MSP-specific,Service provider holding customer data,Logged,Out of period,Stage 4A: incident was September 2020
 E163,Tata Technologies ransomware,2025,MSP-specific,Service provider holding customer data,Logged,"IT provider breached, no downstream reach reported",Stage 4A: NSE filing says client delivery unaffected
 E164,Motility dealership software breach,2025,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -187,7 +187,7 @@ E189,Infosys McCamish Systems ransomware,2024,General supply-chain,Service provi
 E190,Anodot analytics platform tokens used against customers,2026,General supply-chain,API credential or token,Counted (first pass),,
 E191,AI inference providers breached; customer prompts and keys stolen,2026,General supply-chain,API credential or token,To verify,,
 E192,LockBit uses an MSP's ConnectWise RMM to deploy ransomware to customers,2023,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4B: eSentire disclosed Sept 2023; RMM was ScreenConnect
-E193,Play ransomware campaign against MSPs,2023,MSP-specific,RMM or management platform,To verify,,"Stage 4A: Adlumin IR report confirms Play used MSP RMM to reach customers but gives no count; earlier '1,000+ customers' figure was REvil/Kaseya, not Play"
+E193,Play ransomware campaign against MSPs,2023,MSP-specific,RMM or management platform,Logged,Only one customer affected,"Stage 4A: Adlumin IR report confirms Play used MSP RMM to reach customers but gives no count; earlier '1,000+ customers' figure was REvil/Kaseya, not Play; Stage 4B verify: Adlumin (17 Aug 2023) describes one provider RMM reaching one customer; AA23-352A silent on MSPs"
 E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4B: AhnLab says clients shared the provider's cloud file servers; no RMM described
 E195,Nobelium campaign against cloud resellers and MSPs (delegated admin),2021,MSP-specific,Cloud integration,Counted (first pass),,
 E196,ShipMonk fulfilment provider breach (Metabase zero-day),2026,General supply-chain,Service provider holding customer data,Counted (first pass),,
@@ -195,7 +195,7 @@ E197,Context AI hack exposes Vercel customer credentials,2026,General supply-cha
 E198,GoTo breach; customers' encrypted backups stolen,2023,MSP-relevant,Service provider holding customer data,Counted (first pass),,"Linked to LastPass 2022; Stage 4B: stolen data were GoTo product databases, not a backup product"
 E199,Cloud service provider for airports compromised (PA systems),2025,General supply-chain,Cloud integration,Counted (first pass),,
 E200,CDK Global ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
-E201,NetStandard (Kansas MSP) cloud services attack,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,
+E201,NetStandard (Kansas MSP) cloud services attack,2022,MSP-specific,Service provider holding customer data,Logged,No primary source,Stage 4B: only source is a NetStandard customer email reposted on Reddit; outage only (decided 2026-11-25)
 E202,Advanced (UK MSP) ransomware; NHS 111 disrupted,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E203,SITA passenger service system breach,2021,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E204,Atento customer-service provider ransomware,2021,MSP-specific,Service provider holding customer data,Counted (first pass),,Stage 4A: SEC 6-K filings confirm client operations interrupted
@@ -222,7 +222,7 @@ E224,TeamUpdraft breach; UpdraftCentral Cloud keys used to backdoor connected Wo
 E225,Fujitsu ProjectWEB compromise (142 client organisations),2021,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E226,Verkada support super-admin credentials used to access customer cameras,2021,MSP-relevant,RMM or management platform,Counted (first pass),,"Reach differs: 97 customers (Verkada) vs 150,000+ cameras (FTC)"
 E227,PurpleHaze/ShadowPad intrusion into SentinelOne's IT services and logistics provider,2025,MSP-specific,Service provider holding customer data,Logged,"IT provider breached, no downstream reach reported",
-E228,RVTools installer trojanized with Bumblebee,2025,MSP-relevant,Build or release pipeline,To verify,,Dell denies the official site served malware; lookalike sites confirmed
+E228,RVTools installer trojanized with Bumblebee,2025,MSP-relevant,Build or release pipeline,Logged,"Attacker-published copy, no supplier compromise",Dell denies the official site served malware; lookalike sites confirmed; Stage 4B verify: Dell denies official site served malware; trojanised installers on lookalike sites
 E229,Backdoored ARTEX Docker image from an unofficial fork,2026,General supply-chain,"Plugin, extension or package",To verify,,"Unofficial fork, not the supplier; may be 'no supplier compromised'"
 E230,Virtualizor update channel hijacked via BGP route hijack,2026,MSP-relevant,Software update mechanism,Counted (first pass),,
 E231,OVHcloud CLI release binaries swapped with credential stealer,2026,MSP-relevant,Vendor or developer account,Counted (first pass),,~250 downloads
@@ -235,7 +235,7 @@ E237,SHI International malware attack,2022,MSP-specific,Service provider holding
 E238,"Digipolis (Antwerp city IT provider) ransomware disrupts city, police, fire, schools, care homes",2022,MSP-specific,Service provider holding customer data,Counted (first pass),,in-house city IT company serving separate bodies
 E239,Capita / Capita Pension Solutions ransomware; data of 325 client organisations stolen,2023,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E240,RDStealer espionage at an East Asian IT services firm,2023,MSP-specific,Remote-access tool,Logged,"IT provider breached, no downstream reach reported","provider breach, customer reach not reported"
-E241,LogicMonitor customer portals used to push ransomware via Collectors,2023,MSP-relevant,RMM or management platform,To verify,,vendor role (default passwords) from anonymous sources only
+E241,LogicMonitor customer portals used to push ransomware via Collectors,2023,MSP-relevant,RMM or management platform,Logged,Customer credential abuse on a platform,vendor role (default passwords) from anonymous sources only; Stage 4B verify: LogicMonitor confirmed only an incident; default-password and Collector claims from anonymous sources
 E242,IxMetro PowerHost ESXi hosting encrypted by SEXi ransomware,2024,MSP-specific,Service provider holding customer data,Counted (first pass),,
 E243,GuptiMiner hijacks eScan antivirus updates in transit,2024,General supply-chain,Software update mechanism,To verify,,interception outside the vendor; vendor not compromised
 E244,eScan regional update server breached to push trojanized update,2026,General supply-chain,Software update mechanism,Counted (first pass),,
@@ -247,7 +247,7 @@ E249,Gallery Systems attack takes museum collection sites offline,2024,General s
 E250,"BlackSuit steals data of 950,000 from insurance software vendor (Young Consulting)",2024,General supply-chain,Service provider holding customer data,To verify,,
 E251,Bybit theft via compromised Safe{Wallet} developer machine,2025,General supply-chain,Vendor or developer account,To verify,,
 E252,Askul logistics supplier ransomware halts Muji and others' online sales,2025,General supply-chain,Service provider holding customer data,To verify,,
-E253,Vertel (Australian MSP) ransomware,2025,MSP-specific,Service provider holding customer data,To verify,,Stage 4A: Vertel confirmed incident (Cyber Daily); no customer impact confirmed; Space Bears claims client data
+E253,Vertel (Australian MSP) ransomware,2025,MSP-specific,Service provider holding customer data,Logged,No primary source,Stage 4A: Vertel confirmed incident (Cyber Daily); no customer impact confirmed; Space Bears claims client data; Stage 4B verify: Vertel statement (via news) says services not affected; leak-site claim unverified
 E254,Inline Network Integration (MSP) breach of hosted client data,2022,MSP-specific,Service provider holding customer data,Counted (first pass),,"Stage 4A: Maine/Massachusetts AG notices; 58,000+ individuals (unverified); only one client (Heritage Life) named, template notice suggests several"
 E255,Jelly Bean Communications Design (Florida Healthy Kids web host) breach,2021,General supply-chain,Service provider holding customer data,Logged,Single customer affected,Stage 4A: DOJ settlement; no other client affected
 E256,Norway DSS shared ministry IT platform breached via Ivanti EPMM zero-days,2023,MSP-specific,RMM or management platform,Counted (first pass),,"Stage 4A: shared platform of 12 ministries; CISA AA23-213A; government shared-service provider (treated like Valtori, Digipolis)"

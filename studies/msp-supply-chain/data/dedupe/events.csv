@@ -186,7 +186,7 @@ E188,Wealthsimple breach via supply chain attack,2025,General supply-chain,"Plug
 E189,Infosys McCamish Systems ransomware,2024,General supply-chain,Service provider holding customer data,Counted (first pass),,
 E190,Anodot analytics platform tokens used against customers,2026,General supply-chain,API credential or token,Counted (first pass),,
 E191,AI inference providers breached; customer prompts and keys stolen,2026,General supply-chain,API credential or token,To verify,,
-E192,LockBit uses an MSP's ConnectWise RMM to deploy ransomware to customers,2024,MSP-specific,RMM or management platform,Counted (first pass),,
+E192,LockBit uses an MSP's ConnectWise RMM to deploy ransomware to customers,2023,MSP-specific,RMM or management platform,Counted (first pass),,Stage 4B: eSentire disclosed Sept 2023; RMM was ScreenConnect
 E193,Play ransomware campaign against MSPs,2023,MSP-specific,RMM or management platform,To verify,,"Stage 4A: Adlumin IR report confirms Play used MSP RMM to reach customers but gives no count; earlier '1,000+ customers' figure was REvil/Kaseya, not Play"
 E194,Qilin via one South Korean MSP (28 victims),2025,MSP-specific,RMM or management platform,Counted (first pass),,
 E195,Nobelium campaign against cloud resellers and MSPs (delegated admin),2021,MSP-specific,Cloud integration,Counted (first pass),,

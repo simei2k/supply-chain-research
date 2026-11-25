@@ -53,7 +53,7 @@
 | News searches (Stage 2) | Done 2026-11-24: 40 queries, 65 candidates in `data/candidates/news_candidates.csv` |
 | Dedupe (Stage 3) | Done 2026-11-24; as of 2026-11-25: 811 events; 184 counted (all coded), 499 to verify, 46 exploited with no downstream reach, 82 logged |
 | Full coding (Stage 4B) | Done 2026-11-25: 184 counted incidents coded in `data/coded.csv` (63 MSP-specific or MSP-relevant, 121 General). 499 HHS and other events remain "To verify" and are not part of the counted set |
-| Second coder | Done 2026-11-26: MSP sample (13): trust boundary 0.78, tier 0.70, relevance 0.34 (`data/coder2.csv`). General sample (24): trust boundary 0.93, tier 0.50 (target missed), reach 0.56, relevance degenerate (`data/coder2_general.csv`). Tier rule added as decision 17 and 21 rows recoded; re-check pending |
+| Second coder | Done 2026-11-26: MSP sample (13): trust boundary 0.78, tier 0.70, relevance 0.34 (`data/coder2.csv`). General sample (24): trust boundary 0.93, tier 0.50 before decision 17 (software-supply agreement 36%), 24 of 24 after a rule-guided re-check; reach 0.56; relevance degenerate (`data/coder2_general.csv`) |
 | Signals (Stage 5) | Provisional 2026-11-25 in `signals.md`: MSP subset S1, S2, S3 strong, S4 not met |
 | Telemetry visibility | Done internally (see `telemetry/README.md`) |
 
@@ -85,7 +85,7 @@ Exported from the coding Sheet as CSV into `data/candidates/`:
 
 16. Relevance definitions tightened after the second coder (relevance kappa 0.34); see `codebook.md`. Recoded: Atento and Verkada to General, Okta/Sitel and SimpleHelp utility-billing provider to MSP-relevant. Mimecast boundary set to Cloud integration (2026-11-25).
 
-17. Tier rule for software-supply delivery: malicious code delivered to customers' endpoints through the supplier's own package, update, installer or release channel is tier 3 (Software deployment). Adopted after the General second-coder check (tier kappa 0.50, software-supply agreement 36%); 21 rows recoded (2026-11-26).
+17. Tier rule for software-supply delivery: malicious code delivered to customers' endpoints through the supplier's own package, update, installer or release channel is tier 3 (Software deployment). Adopted after the General second-coder check (tier kappa 0.50, software-supply agreement 36%); 21 rows recoded, then Accellion corrected to tier 2 after a blind re-check (2026-11-26).
 
 ## Files
 

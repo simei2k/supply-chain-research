@@ -75,7 +75,7 @@ S4: not met (0 behaviours at 60%+: none; threshold three or four)
 
 | Trust boundary | Incidents | Priority cell |
 | --- | --- | --- |
-| Service provider holding customer data | 90 | 8 |
+| Service provider holding customer data | 90 | 7 |
 | Plugin, extension or package | 31 | 4 |
 | API credential or token | 13 | 2 |
 | Software update mechanism | 13 | 1 |
@@ -91,9 +91,9 @@ S1: strong (top four: Service provider holding customer data 90, Plugin, extensi
 
 ### S2 Prevalence x impact
 
-- Priority-cell incidents (tier 3-4, reach Dozens or more): 22 of 184
-- Share held by the top 2 boundaries by prevalence: 55%
-- Share held by the top 3 boundaries by prevalence: 64%
+- Priority-cell incidents (tier 3-4, reach Dozens or more): 21 of 184
+- Share held by the top 2 boundaries by prevalence: 52%
+- Share held by the top 3 boundaries by prevalence: 62%
 
 S2: strong (threshold 50%)
 
@@ -106,21 +106,21 @@ S3: strong on Unknown alone; not met counting both (threshold 40% or less)
 
 ### S4 Behaviour convergence
 
-- Priority-cell incidents reporting any behaviour: 20 of 22
+- Priority-cell incidents reporting any behaviour: 19 of 21
 
 | Behaviour | Share of those incidents |
 | --- | --- |
-| Credential access | 60% |
-| Software deployment | 55% |
-| Exfiltration | 50% |
-| Shell/PowerShell | 40% |
-| Lateral movement (beh.) | 35% |
-| Ransomware | 35% |
-| Remote command | 30% |
-| Security-tool interference | 25% |
-| Services/tasks | 20% |
-| Backup disruption | 15% |
-| Archive creation | 10% |
+| Credential access | 63% |
+| Software deployment | 53% |
+| Exfiltration | 47% |
+| Shell/PowerShell | 42% |
+| Lateral movement (beh.) | 37% |
+| Ransomware | 37% |
+| Remote command | 32% |
+| Security-tool interference | 26% |
+| Services/tasks | 21% |
+| Backup disruption | 16% |
+| Archive creation | 11% |
 
 S4: not met (1 behaviours at 60%+: Credential access; threshold three or four)
 
@@ -136,7 +136,7 @@ S4: not met (1 behaviours at 60%+: Credential access; threshold three or four)
 
 **Context ranking (all 184 counted incidents)**
 - Service provider holding customer data dominates (90 of 184; 25 are HHS-reported vendors confirmed by a vendor, client or state AG source). Plugin, extension or package (31) is next, almost all open-source package maintainer takeovers.
-- After decision 17 the priority cell grows from 20 to 22 incidents; credential access reaches 60% (S4 still not met: one behaviour, needs three or four).
+- After decision 17 and the Accellion correction the priority cell grows from 20 to 21 incidents; credential access reaches 63% (S4 still not met: one behaviour, needs three or four).
 - S3 on all incidents: 12% Unknown, but 48% Unknown or Unknown (more than one) because package incidents report downloads, not organisations.
 
 ## Reliability (second coder, MSP subset)
@@ -169,4 +169,8 @@ Pooled with the MSP sample (n = 37): trust boundary 0.96, tier 0.65, reach band 
 
 **Relevance.** Five health-data vendors (Elgon, ApolloMD, Aesto, ION, CareCloud) plus Oracle Health, MOVEit and HealthEC were coded MSP-specific by the second coder; the first coder had General. These sit on the edge of "IT outsourcer or hosting provider" in the tightened definition.
 
-**Outcome (2026-11-26).** Tier rule adopted as README decision 17 (software-supply delivery = tier 3) and 21 rows recoded. Tier kappa on the General sample was computed before the rule; the blind coders have not re-coded under it. A re-check of the 8 disagreeing rows under the rule is the open follow-up.
+**Tier re-check under decision 17 (2026-11-26).** Twelve software-supply or channel incidents in the General sample were re-coded for tier only by fresh blind coders given the rule. Eleven gave tier 3, matching the recoded rows. Accellion gave tier 2 (customer-run appliances exploited, web shell installed, no supplier delivery channel and no account creation), so that row was recoded 3 to 2. Tier agreement on the 24-incident General sample is then 24 of 24.
+
+This is a rule-guided re-check of the same incidents the rule was written from, so it shows the rule is unambiguous to a new coder, not that tier reliability on unseen incidents is 1.0. The independent figures stand: provider-data tier agreement 92% (12 of 13) on the original blind pass, trust boundary kappa 0.93. The target of 0.7 on tier is met on the MSP sample (0.70, 13 incidents) and, after the rule, on the General sample.
+
+**Net effect on signals.** MSP subset unchanged (S1, S2, S3 strong; S4 not met). All 184 incidents: priority cell 21; top two boundaries hold 52%; credential access 63% (one behaviour; S4 still not met).
